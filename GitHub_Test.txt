@@ -1,0 +1,3 @@
+--------TESTING GITHUB DESKTOP--------
+
+This File is entirely intended to test commands utilizing GitHub Desktop and a local clone of the IMS487 Repository.
