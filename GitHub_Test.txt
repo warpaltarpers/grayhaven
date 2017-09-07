@@ -1,3 +1,1 @@
------This is a Test-----
-
-This file is another test for the purpose of demonstrating how to save various files.
+This is a test that I want to version control without saving over my brilliant copy on the master.
