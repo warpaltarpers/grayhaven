@@ -11,14 +11,25 @@ public abstract class MovingObject : MonoBehaviour {
   private float inverseMoveTime;
 
   // Use this for initialization
-  protected virtual void Start () {
+  protected virtual void Start ()
+  {
     boxCollider = GetComponent<BoxCollider2D>();
     rb2D = GetComponent<Rigidbody2D>();
     inverseMoveTime = 1f / moveTime;
   }
 
+  protected IEnumerator SmoothMovement (Vector3 end)
+  {
+    float sqrRemainingDistance = (transform.position - end).sqrMagnitude;
+    while (sqrRemainingDistance > float.Epsilon)
+    {
+      Vector3 newPosition = Vector3.MoveTowards (rb2D.position, end, inverseMoveTime * Time.deltaTime);
+    }
+  }
+
   // Update is called once per frame
-  void Update {
+  void Update ()
+  {
 
   }
 }
