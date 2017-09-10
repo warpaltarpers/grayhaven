@@ -27,10 +27,13 @@ public abstract class MovingObject : MonoBehaviour {
     hit = Physics2D.Linecast (start, end, blockingLayer);
     boxCollider.enabled = true;
 
-    if (hit.transform == null)
+    if (hit.transform == null) // Returns true if able to move
     {
       StartCoroutine(SmoothMovement (end));
+      return true;
     }
+
+    return false; // Move was unsucessful
   }
 
   protected IEnumerator SmoothMovement (Vector3 end)
@@ -43,6 +46,21 @@ public abstract class MovingObject : MonoBehaviour {
       sqrRemainingDistance = transform.position - end).sqrMagnitude;
       yield return null; // Waits for a frame before reevaluating condition of loop
     }
+  }
+
+  protected virtual void AttemptMove <T> (int xDir, int yDir)
+    where T : Component
+  {
+    RaycastHit2D hit;
+    bool canMove = Move (xDir, yDir, out hit);
+
+    if (hit.transform == null)
+      return;
+
+    T hitComponent = hit.transform.GetComponent<T>();
+
+    if (!canMove && hitComponent != null)
+      OnCantMove(hitComponent);
   }
 
   protected abstract void OnCantMove <T> (T component)
