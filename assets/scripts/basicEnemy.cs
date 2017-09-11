@@ -31,7 +31,7 @@ public class BasicEnemy : MovingObject {
     else
       xDir = target.position.x > transform.position.x ? 1 : -1;
 
-    AttemptMove <Player> (xDir, yDir)
+        AttemptMove<Player>(xDir, yDir);
   }
 
   protected override void OnCantMove <T> (T component)
