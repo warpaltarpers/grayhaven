@@ -43,7 +43,7 @@ public abstract class MovingObject : MonoBehaviour {
     {
       Vector3 newPosition = Vector3.MoveTowards (rb2D.position, end, inverseMoveTime * Time.deltaTime);
       rb2D.MovePosition(newPosition);
-      sqrRemainingDistance = transform.position - end).sqrMagnitude;
+      sqrRemainingDistance = (transform.position - end).sqrMagnitude;
       yield return null; // Waits for a frame before reevaluating condition of loop
     }
   }

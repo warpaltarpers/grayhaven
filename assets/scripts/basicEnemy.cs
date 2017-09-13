@@ -43,6 +43,7 @@ public class BasicEnemy : MovingObject {
     else
       xDir = target.position.x > transform.position.x ? 1 : -1;
 
+
         AttemptMove<PlayerController>(xDir, yDir);
   }
 
