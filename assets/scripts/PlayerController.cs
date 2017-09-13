@@ -9,11 +9,13 @@ public class PlayerController : MonoBehaviour
 
 	Animator anim;
 
-	bool grounded = false;
-	public Transform groundCheck;
+	public bool isGrounded;
+
+	//public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
 	public float jumpForce = 700;
+
 
 	void Start ()
 	{ 
@@ -24,17 +26,17 @@ public class PlayerController : MonoBehaviour
 	void FixedUpdate ()
 	{
 		// This constantly checks whether or not the player is touching the ground
-		grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		anim.SetBool ("Ground", grounded);
+		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+		//anim.SetBool ("Ground", grounded);
 
 		// Tells the animation how fast the player is moving up or down when jumping or falling
-		anim.SetFloat ("vSpeed", gameObject.GetComponent<Rigidbody2D> ().velocity.y);
+		//anim.SetFloat ("vSpeed", gameObject.GetComponent<Rigidbody2D> ().velocity.y);
 
 		// Gets input from the keyboard and reads how much the player is moving
 		float move = Input.GetAxis ("Horizontal");
 
 		// Controls the movement animation
-		anim.SetFloat("Speed", Mathf.Abs(move));
+		//anim.SetFloat("Speed", Mathf.Abs(move));
 
 		// Creates the movement based on which direction the player intends to head
 		gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maxSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
@@ -47,9 +49,9 @@ public class PlayerController : MonoBehaviour
 
 	void Update() 
 	{
-		if (grounded && Input.GetButton ("Jump")) 
+		if (Input.GetButtonDown ("Jump") && isGrounded) 
 		{
-			anim.SetBool ("Ground", false);
+			//anim.SetBool ("Ground", false);
 			gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 		}
 	}
@@ -61,4 +63,7 @@ public class PlayerController : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
+    
+ 
+
 }
