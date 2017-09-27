@@ -36,6 +36,11 @@ public abstract class MovingObject : MonoBehaviour {
     return false; // Move was unsucessful
   }
 
+	/*
+	 * Takes Vector3, does ___
+	 * Parameters:
+	 * Results:
+	*/
   protected IEnumerator SmoothMovement (Vector3 end)
   {
     float sqrRemainingDistance = (transform.position - end).sqrMagnitude;

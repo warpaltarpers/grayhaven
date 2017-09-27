@@ -1,7 +1,7 @@
 using UnityEngine;
-using System.collections;
+using System.Collections;
 
-public class PlayerController : MonoBehavior {
+public class XboxController : MonoBehaviour {
 
     public float speed = 18;
 
@@ -16,12 +16,12 @@ public class PlayerController : MonoBehavior {
 
     // Update is called once per frame
     void update(){
-        float hAxis = input.GetAxis("Horizontal");
-        float vAxis = input.GetAxis("Vertical");
+        float hAxis = Input.GetAxis("Horizontal");
+        float vAxis = Input.GetAxis("Vertical");
 
-        float rStickX = input.GetAxis("X360_RStickX");
+        float rStickX = Input.GetAxis("X360_RStickX");
 
-        Vector3 movement = transform.TransformDirection(new Vector3(hAxis, 0, vAxis) * speed * time.deltaTime);
+        Vector3 movement = transform.TransformDirection(new Vector3(hAxis, 0, vAxis) * speed * Time.deltaTime);
 
         rig.MovePosition(transform.position + movement);
 
