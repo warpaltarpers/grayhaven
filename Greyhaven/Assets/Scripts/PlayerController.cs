@@ -12,11 +12,6 @@ public class PlayerController : MonoBehaviour
 
     public float meleeDuration = 2.0f;
 
-    //setup for projectile
-    public GameObject projectilePrefab;
-    private System.Collections.Generic.List<GameObject> Projectiles = new System.Collections.Generic.List<GameObject>();
-    private float projectileVelocity = 3;
-
     Animator anim;
     bool facingRight = true;
 
@@ -82,30 +77,7 @@ public class PlayerController : MonoBehaviour
         {
             meleeAttack.SetActive(false);
         }
-
-        // If fire 2 button is pressed, fire projectile
-        if (Input.GetButtonDown("Fire2"))
-        {
-            GameObject bullet = (GameObject)Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-            Projectiles.Add(bullet);
-        }
-
-        for (int i = 0; i < Projectiles.Count; i++)
-        {
-            GameObject goBullet = Projectiles[i];
-            if (goBullet != null)
-            {
-                goBullet.transform.Translate(new Vector3(1, 0) * Time.deltaTime * projectileVelocity);
-                Vector3 bulletScreenPos = Camera.main.WorldToScreenPoint(goBullet.transform.position);
-                if (bulletScreenPos.x >= Screen.width || bulletScreenPos.x <= 0)
-                {
-                    DestroyObject(goBullet);
-                    Projectiles.Remove(goBullet);
-                }
-
-            }
-        }
-        //Projectile script ends
+        
 	}
 
 
