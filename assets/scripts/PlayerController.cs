@@ -4,24 +4,29 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float maxSpeed = 10f;
-	bool facingRight = true;
 	public int playerHealth = 100;
+    public GameObject meleeAttack;
+    public bool isGrounded;
+    public float jumpForce = 700;
+    Camera mainCamera;
 
-	Animator anim;
+    public float meleeDuration = 2.0f;
 
-	public bool isGrounded;
+    Animator anim;
+    bool facingRight = true;
 
 	//public Transform groundCheck;
 	float groundRadius = 0.2f;
 	public LayerMask whatIsGround;
-	public float jumpForce = 700;
+
+    private float attackDuration = 0.0f;
 
 
 	void Start ()
 	{ 
 		// This allows for the sprites to change based on the code being run
 		anim = GetComponent<Animator> ();
-
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 	}
 	void FixedUpdate ()
 	{
@@ -41,9 +46,14 @@ public class PlayerController : MonoBehaviour
 		// Creates the movement based on which direction the player intends to head
 		gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maxSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
 
-		if (move > 0 && !facingRight)
+
+        
+        //Left to Right
+		if (Input.mousePosition.x > mainCamera.WorldToScreenPoint(transform.position).x && !facingRight)
 			Flip ();
-		else if (move < 0 && facingRight)
+
+        //Right to Left
+		else if (Input.mousePosition.x < mainCamera.WorldToScreenPoint(transform.position).x && facingRight)
 			Flip ();
 	}
 
@@ -54,7 +64,23 @@ public class PlayerController : MonoBehaviour
 			//anim.SetBool ("Ground", false);
 			gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 		}
+
+        /*
+         * If fire button is pressed, activate meleeAttack game object for X seconds (determined by meleeDuration)
+         * 
+         */
+        if (Input.GetButtonDown("Fire1"))   {
+            meleeAttack.SetActive(true);
+            attackDuration = Time.time + meleeDuration;
+        }      
+        if(meleeAttack.activeInHierarchy && Time.time > attackDuration)
+        {
+            meleeAttack.SetActive(false);
+        }
+        
 	}
+
+
 
 	// Creates a function that will automatically flip the animation when the player changes directions 
 	void Flip(){
