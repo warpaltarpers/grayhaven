@@ -1,5 +1,5 @@
-# IMS487
-Repository for GreyHaven for IMS487A Fall '17
+# GreyHaven
+A Metroidvania game about bringing color back to a world without it
 
 ## Design Documents 
 * **Art Bible** - [here](https://docs.google.com/document/d/1fxTS76xz25uLl8_Hb4x7iSx7hkrGW5Efwrg9UUah0K8/)
