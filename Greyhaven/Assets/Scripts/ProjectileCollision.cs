@@ -12,7 +12,7 @@ public class ProjectileCollision : MonoBehaviour {
     private System.Collections.Generic.List<GameObject> Projectiles = new System.Collections.Generic.List<GameObject>();
     private float projectileVelocity = 3;
     
-    //private Collider2D other;
+    private Collider2D other;
 
     // Use this for initialization
     void Start () {
@@ -32,9 +32,12 @@ public class ProjectileCollision : MonoBehaviour {
         for (int i = 0; i < Projectiles.Count; i++)
         {
             GameObject goBullet = Projectiles[i];
+            
             if (goBullet != null)
             {
-                goBullet.transform.Translate(new Vector3(1, 0) * Time.deltaTime * projectileVelocity);
+                float direction = 1;
+                //direction = Input.GetAxis("Horizontal");
+                goBullet.transform.Translate(new Vector3(direction, 0) * Time.deltaTime * projectileVelocity);
                 Vector3 bulletScreenPos = Camera.main.WorldToScreenPoint(goBullet.transform.position);
                 if (bulletScreenPos.x >= Screen.width || bulletScreenPos.x <= 0)
                 {
@@ -44,16 +47,21 @@ public class ProjectileCollision : MonoBehaviour {
 
             }
         }
+
         //Projectile script ends
     }
 
-    /*void OnCollisionEnter(Collision col)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (col.gameObject.name == "BasicEnemy")
+        for (int i = 0; i < Projectiles.Count; i++)
         {
-            Destroy(col.gameObject);
+            GameObject goBullet = Projectiles[i];
+            if (other.gameObject.tag == "Enemy")
+            {
+                DestroyObject(goBullet);
+            }
         }
-    } */
+    } 
 
 
 

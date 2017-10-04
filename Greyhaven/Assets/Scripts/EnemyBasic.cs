@@ -8,6 +8,7 @@ public class EnemyBasic : MonoBehaviour
     public GameController gameController;
     public GameObject gameControllerObject;
     public int enemyHealth = 100;
+    public int moveSpeed = 5;
 
     private Collider2D other;
 
