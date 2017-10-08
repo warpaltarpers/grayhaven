@@ -22,7 +22,10 @@ GameObject:
   - component: {fileID: 212027769599128550}
   - component: {fileID: 61167997918384908}
   - component: {fileID: 50442655568442580}
+  - component: {fileID: 114852983154171976}
   - component: {fileID: 114258711666860758}
+  - component: {fileID: 114554704621636020}
+  - component: {fileID: 114406303642927370}
   m_Layer: 0
   m_Name: BasicEnemy
   m_TagString: Enemy
@@ -102,6 +105,69 @@ MonoBehaviour:
   gameController: {fileID: 0}
   gameControllerObject: {fileID: 0}
   enemyHealth: 100
+  moveSpeed: 5
+--- !u!114 &114406303642927370
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002183856576660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 373b52eb9bf8c40f785bb6947a1aee66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  drawGizmos: 1
+  detailedGizmos: 0
+  startEndModifier:
+    addPoints: 0
+    exactStartPoint: 3
+    exactEndPoint: 3
+    useRaycasting: 0
+    mask:
+      serializedVersion: 2
+      m_Bits: 4294967295
+    useGraphRaycasting: 0
+  traversableTags: -1
+  traversableTagsCompatibility:
+    tagsChange: -1
+    tagsSet: -1
+  tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+--- !u!114 &114554704621636020
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002183856576660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668c51213e539e74f908878999a2b21d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  updateRate: 2
+  speed: 300
+  fMode: 0
+  isGrounded: 0
+  jumpForce: 700
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
+  pathIsEnded: 0
+  nextWaypointDistance: 3
+--- !u!114 &114852983154171976
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1002183856576660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f213dc076465df428c6f2cb9a8bdf5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  refPlayerController: {fileID: 0}
 --- !u!212 &212027769599128550
 SpriteRenderer:
   m_ObjectHideFlags: 1

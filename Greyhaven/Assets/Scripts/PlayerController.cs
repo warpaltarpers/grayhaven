@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour
@@ -8,6 +9,20 @@ public class PlayerController : MonoBehaviour
     public GameObject meleeAttack;
     public bool isGrounded;
     public float jumpForce = 700;
+    public Slider healthSlider;
+    public float swordLength;
+    public GameObject meleeRay;
+    public GameObject enemyBasic;
+    public EnemyBasic enemy;
+    public AudioClip dmg;
+
+    //Flashing Damage
+    public Image damageImage;
+    public float flashSpeed = 5f;
+    public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
+
+    private bool isDamaged;
+
     Camera mainCamera;
 
     public float meleeDuration = 2.0f;
@@ -20,6 +35,9 @@ public class PlayerController : MonoBehaviour
 	public LayerMask whatIsGround;
 
     private float attackDuration = 0.0f;
+
+    private Collider2D other;
+    private Vector2 meleeStrike;
 
 
 	void Start ()
@@ -47,18 +65,25 @@ public class PlayerController : MonoBehaviour
 		gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2 (move * maxSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
 
 
-        
+
         //Left to Right
-		if (Input.mousePosition.x > mainCamera.WorldToScreenPoint(transform.position).x && !facingRight)
-			Flip ();
+        if (Input.mousePosition.x > mainCamera.WorldToScreenPoint(transform.position).x && !facingRight)
+        {
+            Flip();
+            meleeStrike = Vector2.right;
+        }
 
         //Right to Left
-		else if (Input.mousePosition.x < mainCamera.WorldToScreenPoint(transform.position).x && facingRight)
-			Flip ();
+        else if (Input.mousePosition.x < mainCamera.WorldToScreenPoint(transform.position).x && facingRight)
+        {
+            Flip();
+            meleeStrike = Vector2.left;
+        } 
 	}
 
 	void Update() 
 	{
+        RaycastHit2D hit;
 		if (Input.GetButtonDown ("Jump") && isGrounded) 
 		{
 			//anim.SetBool ("Ground", false);
@@ -72,12 +97,29 @@ public class PlayerController : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))   {
             meleeAttack.SetActive(true);
             attackDuration = Time.time + meleeDuration;
+            Debug.DrawRay(meleeRay.transform.position, meleeStrike, Color.green ,swordLength);
+            hit = Physics2D.Raycast(meleeRay.transform.position, meleeStrike, swordLength);
+            if (hit.collider.tag == "Enemy")
+            {
+                    enemyBasic = hit.collider.gameObject;
+                    enemy = enemyBasic.GetComponent<EnemyBasic>();
+                    enemy.TakeDamage();
+            }
         }      
         if(meleeAttack.activeInHierarchy && Time.time > attackDuration)
         {
             meleeAttack.SetActive(false);
         }
-        
+
+        if (isDamaged)
+        {
+            damageImage.color = flashColour;
+            AudioSource.PlayClipAtPoint(dmg, transform.position, 3.0f);
+        }
+        else
+            damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
+        isDamaged = false;
+
 	}
 
 
@@ -89,7 +131,14 @@ public class PlayerController : MonoBehaviour
 		theScale.x *= -1;
 		transform.localScale = theScale;
 	}
-    
- 
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))        {
+            playerHealth -= 20;
+            isDamaged = true;
+            healthSlider.value = playerHealth;
+        }
+    }
 
 }

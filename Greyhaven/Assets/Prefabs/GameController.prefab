@@ -53,3 +53,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyCountText: {fileID: 0}
   winText: {fileID: 0}
+  player: {fileID: 0}
