@@ -135,9 +135,13 @@ public class PlayerController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.CompareTag("Enemy"))        {
-            playerHealth -= 20;
-            isDamaged = true;
+            if (GameObject.Find("Player").GetComponent<RedPowerUp>().invuln == false)
+            {
+                playerHealth -= 20;
+                isDamaged = true;
+            }
             healthSlider.value = playerHealth;
+
         }
     }
 

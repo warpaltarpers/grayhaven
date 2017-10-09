@@ -1778,34 +1778,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1339615890396530, guid: bd092cfde81ad5040af34dd2427cf6c9,
     type: 2}
   m_PrefabInternal: {fileID: 1519488308}
---- !u!114 &1963128744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1963128743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a0767b92030e6743ad69c706a996e35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  invuln: 0
-  Mat_player: {fileID: 2100000, guid: c89f9032abd5e1941883b5b68eab2f76, type: 2}
-  Mat_invuln: {fileID: 2100000, guid: 2722b7da6cb04ea439d04d5ef348c09f, type: 2}
-  rend: {fileID: 0}
---- !u!114 &1963128745
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1963128743}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 442ed6d8d42e5e54e865c13ee4a98b7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectilePrefab: {fileID: 1561878493832374, guid: 9f4260feb6f397545ba34c228b645c84,
-    type: 2}
 --- !u!4 &1963128750 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4252348246876604, guid: bd092cfde81ad5040af34dd2427cf6c9,
