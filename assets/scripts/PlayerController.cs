@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
             meleeStrike = Vector2.right;
+            projectileDirection = Vector2.right;
         }
 
         //Right to Left
@@ -79,12 +80,13 @@ public class PlayerController : MonoBehaviour
         {
             Flip();
             meleeStrike = Vector2.left;
+            projectileDirection = Vector2.left;
         } 
         */
 
-	}
+    }
 
-	void Update() 
+    void Update() 
 	{
         RaycastHit2D hit;
 		if (Input.GetButtonDown ("Jump") && isGrounded) 
@@ -99,20 +101,24 @@ public class PlayerController : MonoBehaviour
          * If value is greater than 0, then attack
          * 
          */
-        float primaryAttack = Input.GetAxis("primaryAttack");
-        if (primaryAttack > 0)
-        {
-            meleeAttack.SetActive(true);
-            attackDuration = Time.time + meleeDuration;
-            Debug.DrawRay(meleeRay.transform.position, meleeStrike, Color.green, swordLength);
-            hit = Physics2D.Raycast(meleeRay.transform.position, meleeStrike, swordLength);
-            if (hit != null && hit.collider != null && hit.collider.tag == "Enemy")
+
+        //if (GameObject.Find("Player").GetComponent<OrangePowerUp>().powerEquipped == 1)
+        //{
+            float primaryAttack = Input.GetAxis("primaryAttack");
+            if (primaryAttack > 0)
             {
-                enemyBasic = hit.collider.gameObject;
-                enemy = enemyBasic.GetComponent<EnemyBasic>();
-                enemy.TakeDamage();
+                meleeAttack.SetActive(true);
+                attackDuration = Time.time + meleeDuration;
+                Debug.DrawRay(meleeRay.transform.position, meleeStrike, Color.green, swordLength);
+                hit = Physics2D.Raycast(meleeRay.transform.position, meleeStrike, swordLength);
+                if (hit != null && hit.collider != null && hit.collider.tag == "Enemy")
+                {
+                    enemyBasic = hit.collider.gameObject;
+                    enemy = enemyBasic.GetComponent<EnemyBasic>();
+                    enemy.TakeDamage();
+                }
             }
-        }
+        //}
                   
         if(meleeAttack.activeInHierarchy && Time.time > attackDuration)
         {
