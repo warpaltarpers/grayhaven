@@ -5,22 +5,35 @@ using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
-    public Text enemyCountText;
+
     public Text winText;
+    public GameObject player;
 
     private int numOfEnemies;
+    private int playerHealth;
     
 
 	// Use this for initialization
 	void Start () {
         numOfEnemies = GameObject.FindGameObjectsWithTag("Enemy").Length;
-        setEnemyText();
+        playerHealth = player.GetComponent<PlayerController>().playerHealth;
+
         winText.text = "";
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
+        playerHealth = player.GetComponent<PlayerController>().playerHealth;
+        if(playerHealth <= 0)        {
+            Destroy(player);
+            winText.text = "Game Over";
+        }
+
+        if (numOfEnemies <= 0)
+        {
+            winText.text = "You Win";
+        }
         /*
          * End the game if there are no enemies left
          */
@@ -35,13 +48,7 @@ public class GameController : MonoBehaviour {
      */
     public void UpdateEnemyCount()    {
         numOfEnemies--;
-        setEnemyText();
     }
 
-    void setEnemyText()    {
-        enemyCountText.text = "Enemies: " + numOfEnemies.ToString();
-        if(numOfEnemies <= 0)   {
-            winText.text = "You Win";
-        }
-    }
+
 }

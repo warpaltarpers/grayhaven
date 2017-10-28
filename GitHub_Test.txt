@@ -1,3 +1,0 @@
------This is a Test-----
-
-This file is another test for the purpose of demonstrating how to save various files.

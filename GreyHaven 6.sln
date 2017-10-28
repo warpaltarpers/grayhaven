@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreyHaven 6.CSharp", "GreyHaven 6.CSharp.csproj", "{C6A5A5A6-DACC-A875-ABFF-4EBD57C028A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreyHaven 6.CSharp.Plugins", "GreyHaven 6.CSharp.Plugins.csproj", "{02EB57D5-B8DA-D72F-3932-8240DB26F0F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreyHaven 6.CSharp.Editor.Plugins", "GreyHaven 6.CSharp.Editor.Plugins.csproj", "{D111A4EF-96D4-997D-9EAE-1710803476CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6A5A5A6-DACC-A875-ABFF-4EBD57C028A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6A5A5A6-DACC-A875-ABFF-4EBD57C028A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6A5A5A6-DACC-A875-ABFF-4EBD57C028A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6A5A5A6-DACC-A875-ABFF-4EBD57C028A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02EB57D5-B8DA-D72F-3932-8240DB26F0F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02EB57D5-B8DA-D72F-3932-8240DB26F0F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02EB57D5-B8DA-D72F-3932-8240DB26F0F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02EB57D5-B8DA-D72F-3932-8240DB26F0F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D111A4EF-96D4-997D-9EAE-1710803476CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D111A4EF-96D4-997D-9EAE-1710803476CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D111A4EF-96D4-997D-9EAE-1710803476CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D111A4EF-96D4-997D-9EAE-1710803476CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
