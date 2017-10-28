@@ -1,0 +1,30 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class movingPlatform : MonoBehaviour {
+
+    public float rightLimit = 2.5f;
+    public float leftLimit = 1.0f;
+    public float speed = 2.0f;
+
+    public int direction = 1;
+
+    public Vector3 movement;
+
+    void Update()
+    {
+        if (transform.position.x - transform.parent.transform.position.x >= rightLimit)
+        {
+            direction = -1;
+
+            
+        }
+        else if (transform.position.x - transform.parent.transform.position.x <= leftLimit)
+        {
+            direction = 1;
+        }
+        movement = Vector3.right * direction * speed * Time.deltaTime;
+        gameObject.transform.Translate(movement);
+    }
+}
