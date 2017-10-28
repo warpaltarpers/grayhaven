@@ -1,0 +1,21 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Test : MonoBehaviour {
+
+    public Health health;
+
+	void OnGUI () {
+		if(GUI.Button(new Rect(Screen.width/1.5f,Screen.height / 4 + Screen.width / 12 * 0,120,25),"HeartSlot+1")){
+            health.AddHearts(1);
+        }
+        if (GUI.Button (new Rect(Screen.width / 1.5f, Screen.height / 4 + Screen.width / 12 * 1, 120, 25), "Damage=1 Update")){
+            health.ModifyHealth(-1);
+        }
+        if (GUI.Button (new Rect(Screen.width / 1.5f, Screen.height / 4 + Screen.width / 12 * 2, 120, 25), "Heal=1 Update")){
+            health.ModifyHealth(1);
+        }
+    }
+
+}
