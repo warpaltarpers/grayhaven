@@ -34,10 +34,9 @@ public class EnemyBasic : MonoBehaviour
      * Detect collisions
      * 
      */
-    void OnTriggerEnter2D(Collider2D other)
+    public void TakeDamage()
     {
-        if (other.gameObject.CompareTag("Attack"))
-            enemyHealth -= 50;
+        enemyHealth -= 50;
 
     }
 }
