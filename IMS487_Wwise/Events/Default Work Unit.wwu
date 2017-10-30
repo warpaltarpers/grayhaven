@@ -6,6 +6,81 @@
 				<Event Name="Wwise_Test" ID="{4532417C-4F57-4648-AE80-B543D5868893}">
 					<Comment>Should be empty. Listed as "[Missing]"</Comment>
 				</Event>
+				<Event Name="Title_Score" ID="{B12A0C04-746D-4CDB-B605-29B503053F8D}">
+					<Comment>Score track that plays on the main menu.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{A674ED8E-9349-43AF-B445-87BE3B333C3E}" ShortID="299077198">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_TitleTrack" ID="{F2247BD3-BAC0-48AE-8472-49C03BD1637C}" WorkUnitID="{520B6FE6-B470-4D25-BB9B-7B7C0B8FA288}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Damage_Player" ID="{C03ACA88-AA2A-4975-A2FA-6BD4CC3E4197}">
+					<Comment>Sound made when damage is dealt to the player.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{91C1AB27-3684-4E2A-9621-E6B269FA18B8}" ShortID="365261561">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_PlayerDMG" ID="{94545FE2-8100-4CD1-B289-A0F66E679220}" WorkUnitID="{520B6FE6-B470-4D25-BB9B-7B7C0B8FA288}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Damage_Enemy" ID="{DF1BF7C4-1512-44B8-BF78-007FC688DDD5}">
+					<Comment>Sound made when damage is dealt to an enemy. Temporarily the same as Level_Damage_Player.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{6EDB8B37-C0F2-4F79-8D4A-52C2D918A08E}" ShortID="837622515">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_PlayerDMG" ID="{94545FE2-8100-4CD1-B289-A0F66E679220}" WorkUnitID="{520B6FE6-B470-4D25-BB9B-7B7C0B8FA288}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Click" ID="{F7F6D35C-029D-4E7A-BFBB-4808E9B26A55}">
+					<Comment>Sound made when interacting with UI elements.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{66A20D09-158D-430D-A210-3827C7603C22}" ShortID="579414308">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_MenuClick" ID="{73362138-452F-4547-AE03-A877F54BA6C2}" WorkUnitID="{520B6FE6-B470-4D25-BB9B-7B7C0B8FA288}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Click_Error" ID="{A74A8142-87BA-4665-8366-547F13E1CCD3}">
+					<Comment>Sound made when elements of the UI are unavailable.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{27BC3738-BD6A-42D2-988B-6D60108F49CA}" ShortID="560918272">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_ClickError" ID="{09949844-F35B-446E-9A72-750A12D727C9}" WorkUnitID="{520B6FE6-B470-4D25-BB9B-7B7C0B8FA288}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
