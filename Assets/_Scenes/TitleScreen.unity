@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1931739169}
+      - m_Target: {fileID: 1767837984}
         m_MethodName: ChangeScene
         m_Mode: 5
         m_Arguments:
@@ -550,7 +550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1466127634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -778,51 +778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 664a460b598c894409943c248617c662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseButton: {fileID: 0}
-  gameOverButton: {fileID: 0}
-  gameOverText: {fileID: 0}
-  healthChecker: {fileID: 0}
---- !u!1 &1931739168
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1931739170}
-  - component: {fileID: 1931739169}
-  m_Layer: 0
-  m_Name: PauseGameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1931739169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1931739168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 664a460b598c894409943c248617c662, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   pauseButton: {fileID: 1466127633}
-  gameOverButton: {fileID: 0}
-  gameOverText: {fileID: 0}
-  healthChecker: {fileID: 0}
---- !u!4 &1931739170
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1931739168}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.4171824, y: 15.069828, z: -1.1955546}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  gameOverButton: {fileID: 1466127633}
+  gameOverText: {fileID: 1466127633}
+  healthChecker: {fileID: 1466127633}
