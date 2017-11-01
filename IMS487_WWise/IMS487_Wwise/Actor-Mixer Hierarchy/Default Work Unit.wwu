@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}" SchemaVersion="80">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="IMS487_ClickError" ID="{43BD788B-3517-45AF-9DE7-955695010F3C}" ShortID="82171341">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C264A3FB-19D1-4557-A9A4-7A4512C8026A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2F13A813-8B74-4687-A531-94E660451CC5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMS487_ClickError" ID="{4D76CC5F-CEC8-43D8-A963-F634A1062CB7}" ShortID="166143050">
+							<Language>SFX</Language>
+							<AudioFile>IMS487_ClickError.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="IMS487_ClickError" ID="{4D76CC5F-CEC8-43D8-A963-F634A1062CB7}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="IMS487_MenuClick" ID="{87F269C2-5D05-4386-9595-6DB3C5AE5415}" ShortID="808509895">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C264A3FB-19D1-4557-A9A4-7A4512C8026A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2F13A813-8B74-4687-A531-94E660451CC5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMS487_MenuClick" ID="{2EE982C0-75B2-494B-B2F9-B18E5E0126A3}" ShortID="875648919">
+							<Language>SFX</Language>
+							<AudioFile>IMS487_MenuClick.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="IMS487_MenuClick" ID="{2EE982C0-75B2-494B-B2F9-B18E5E0126A3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="IMS487_PlayerDMG" ID="{9307FC94-99B5-47FB-91D0-56C5058037F2}" ShortID="821199966">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C264A3FB-19D1-4557-A9A4-7A4512C8026A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2F13A813-8B74-4687-A531-94E660451CC5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMS487_PlayerDMG" ID="{4A3B22A0-E9A0-49FF-8C08-73825A969108}" ShortID="12915222">
+							<Language>SFX</Language>
+							<AudioFile>IMS487_PlayerDMG.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="IMS487_PlayerDMG" ID="{4A3B22A0-E9A0-49FF-8C08-73825A969108}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="IMS487_TitleTrack-1" ID="{1F992848-12EC-4DC3-8D21-DB34E90DC845}" ShortID="728629570">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C264A3FB-19D1-4557-A9A4-7A4512C8026A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2F13A813-8B74-4687-A531-94E660451CC5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMS487_TitleTrack-1" ID="{5E27FDDA-B591-4171-BD25-C11F1ADD9D4D}" ShortID="418673312">
+							<Language>SFX</Language>
+							<AudioFile>IMS487_TitleTrack-1.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="IMS487_TitleTrack-1" ID="{5E27FDDA-B591-4171-BD25-C11F1ADD9D4D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>
