@@ -1,5 +1,6 @@
 fileFormatVersion: 2
 guid: a40c1b84cf7fe418bae97a29041b85a4
+<<<<<<< HEAD
 folderAsset: yes
 timeCreated: 1509760517
 licenseType: Free
@@ -7,3 +8,5 @@ DefaultImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+=======
+>>>>>>> refs/remotes/origin/design
