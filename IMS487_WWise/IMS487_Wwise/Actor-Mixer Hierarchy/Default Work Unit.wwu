@@ -42,9 +42,28 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="IMS487_PlayerDMG" ID="{9307FC94-99B5-47FB-91D0-56C5058037F2}" ShortID="821199966">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>2</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C264A3FB-19D1-4557-A9A4-7A4512C8026A}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+							<ObjectRef Name="Big_Garage1" ID="{172402A8-22F4-40FC-BE1D-5269594CB633}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="High_Impact" ID="{2AFD6FB0-C906-4683-A377-FEEEF72967B0}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect2" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+							<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="Effect3" PluginName="Wwise Pitch Shifter" CompanyID="0" PluginID="136" PluginType="3">
+							<ObjectRef Name="Octave_Down" ID="{062EC4B1-5372-4D1E-917B-C757293F2B42}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2F13A813-8B74-4687-A531-94E660451CC5}"/>
@@ -80,6 +99,25 @@
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="IMS487_TitleTrack-1" ID="{5E27FDDA-B591-4171-BD25-C11F1ADD9D4D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="IMS487_CaveEnvironment" ID="{2A557E50-BBBC-4C49-9B5D-0F0060CB9B31}" ShortID="813225403">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{C264A3FB-19D1-4557-A9A4-7A4512C8026A}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{2F13A813-8B74-4687-A531-94E660451CC5}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="IMS487_CaveEnvironment" ID="{D31F36B4-2DC4-4863-B1C2-4EE8FA263A4A}" ShortID="1047555207">
+							<Language>SFX</Language>
+							<AudioFile>IMS487_CaveEnvironment.wav</AudioFile>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="IMS487_CaveEnvironment" ID="{D31F36B4-2DC4-4863-B1C2-4EE8FA263A4A}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

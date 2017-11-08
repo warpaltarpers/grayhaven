@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FC1D161-9E62-4D27-BDCB-25C2683838F0}'
-    m_lastTimePsrt1: -1769682252
-    m_lastTimePart2: -1999298319
+    m_lastTimePsrt1: 1069252339
+    m_lastTimePart2: -1999296932
     List:
     - Name: Level_Damage_Enemy
       Path: Default Work Unit\Level_Damage_Enemy
@@ -38,6 +38,16 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1814836401
       Guid: 39ba77bdaddbc547ba2e96bd092353c9
+      maxAttenuation: 0
+    - Name: Level_Enviro_Cave
+      Path: Default Work Unit\Level_Enviro_Cave
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level_Enviro_Cave
+        ObjectType: 3
+      ID: -1854279039
+      Guid: d2eb61f2033dda47b094ff3759231679
       maxAttenuation: 0
     - Name: Title_Score
       Path: Default Work Unit\Title_Score
@@ -104,8 +114,8 @@ MonoBehaviour:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{88091D7F-78C9-4ED0-802F-3AA288D5B124}'
-    m_lastTimePsrt1: -1192706242
-    m_lastTimePart2: -1999298314
+    m_lastTimePsrt1: -1326906203
+    m_lastTimePart2: -1999296930
     List:
     - Name: SB_Main
       Path: Default Work Unit\SB_Main

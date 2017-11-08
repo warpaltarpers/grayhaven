@@ -3,13 +3,14 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{D2C2E804-ACCC-4D66-805E-4223CA39BD14}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\Score\Assets"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\Sounds\Assets"/>
 				<Property Name="Event Action List\{23FA4EDF-7617-414F-B9E9-693FAABD65BA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{27074A3A-C0D5-4498-BEFB-1671D99825BD}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{393A17DB-82D9-4756-9E4F-24156BFC574E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8DB13CCF-8FAE-411D-A241-AE52BD0A8A2D}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{A16A51DE-6FDE-45E1-AE53-D2A33CC0CFCA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{BD77BA39-DBAD-47C5-BA2E-96BD092353C9}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{F261EBD2-3D03-47DA-B094-FF3759231679}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

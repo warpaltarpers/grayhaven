@@ -81,6 +81,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Level_Enviro_Cave" ID="{F261EBD2-3D03-47DA-B094-FF3759231679}">
+					<Comment>The background sound to create an atmosphere for the vertical slice.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{8608D205-2D79-4B42-AC6F-BEF1A7758F3F}" ShortID="249767069">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_CaveEnvironment" ID="{2A557E50-BBBC-4C49-9B5D-0F0060CB9B31}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

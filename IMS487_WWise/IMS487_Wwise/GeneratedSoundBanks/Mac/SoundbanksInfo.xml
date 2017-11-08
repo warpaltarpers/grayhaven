@@ -18,6 +18,7 @@
 			<IncludedEvents>
 				<Event Id="908927922" Name="Level_Damage_Enemy" ObjectPath="\Events\Default Work Unit\Level_Damage_Enemy"/>
 				<Event Id="1814836401" Name="Level_Damage_Player" ObjectPath="\Events\Default Work Unit\Level_Damage_Player"/>
+				<Event Id="2440688257" Name="Level_Enviro_Cave" ObjectPath="\Events\Default Work Unit\Level_Enviro_Cave"/>
 				<Event Id="647710990" Name="Title_Score" ObjectPath="\Events\Default Work Unit\Title_Score"/>
 				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Default Work Unit\UI_Click"/>
 				<Event Id="17638345" Name="UI_Click_Error" ObjectPath="\Events\Default Work Unit\UI_Click_Error"/>
@@ -34,11 +35,15 @@
 				</File>
 				<File Id="418673312" Language="SFX">
 					<ShortName>IMS487_TitleTrack-1.wav</ShortName>
-					<Path>SFX\IMS487_TitleTrack-1_1C9C67B2.wem</Path>
+					<Path>SFX\IMS487_TitleTrack-1_F17FB28C.wem</Path>
 				</File>
 				<File Id="875648919" Language="SFX">
 					<ShortName>IMS487_MenuClick.wav</ShortName>
 					<Path>SFX\IMS487_MenuClick_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1047555207" Language="SFX">
+					<ShortName>IMS487_CaveEnvironment.wav</ShortName>
+					<Path>SFX\IMS487_CaveEnvironment_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

@@ -5,10 +5,17 @@ Event	ID	Name			Wwise Object Path	Notes
 	1075024023	Wwise_Test			\Default Work Unit\Wwise_Test	A test event as a pipeline referral. Should be labeled "[Missing]"
 	1814836401	Level_Damage_Player			\Default Work Unit\Level_Damage_Player	Sound generated when the player takes damage.
 	2249769530	UI_Click			\Default Work Unit\UI_Click	Sound made when a UI element is clickable.
+	2440688257	Level_Enviro_Cave			\Default Work Unit\Level_Enviro_Cave	The background sound to create an atmosphere for the vertical slice.
+
+Effect plug-ins	ID	Name	Type				Notes
+	3043085106	High_Impact	Wwise Compressor			
+	3546444380	Big_Garage1	Wwise Matrix Reverb			
+	3948262040	Octave_Down	Wwise Pitch Shifter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	12915222	IMS487_PlayerDMG	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_PlayerDMG_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_PlayerDMG		352864
 	166143050	IMS487_ClickError	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_ClickError_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_ClickError		352864
-	418673312	IMS487_TitleTrack-1	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_TitleTrack-1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_TitleTrack-1		15052872
+	418673312	IMS487_TitleTrack-1	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_TitleTrack-1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_TitleTrack-1		15052872
 	875648919	IMS487_MenuClick	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_MenuClick_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_MenuClick		352864
+	1047555207	IMS487_CaveEnvironment	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_CaveEnvironment_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_CaveEnvironment		8478292
 

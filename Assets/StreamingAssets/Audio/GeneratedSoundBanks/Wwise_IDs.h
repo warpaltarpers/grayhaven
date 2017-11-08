@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID LEVEL_DAMAGE_ENEMY = 908927922U;
         static const AkUniqueID LEVEL_DAMAGE_PLAYER = 1814836401U;
+        static const AkUniqueID LEVEL_ENVIRO_CAVE = 2440688257U;
         static const AkUniqueID TITLE_SCORE = 647710990U;
         static const AkUniqueID UI_CLICK = 2249769530U;
         static const AkUniqueID UI_CLICK_ERROR = 17638345U;

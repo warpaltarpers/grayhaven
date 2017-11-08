@@ -11,6 +11,7 @@
 						<ObjectRef Name="Wwise_Test" ID="{A16A51DE-6FDE-45E1-AE53-D2A33CC0CFCA}" WorkUnitID="{3FC1D161-9E62-4D27-BDCB-25C2683838F0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Title_Score" ID="{393A17DB-82D9-4756-9E4F-24156BFC574E}" WorkUnitID="{3FC1D161-9E62-4D27-BDCB-25C2683838F0}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Level_Damage_Player" ID="{BD77BA39-DBAD-47C5-BA2E-96BD092353C9}" WorkUnitID="{3FC1D161-9E62-4D27-BDCB-25C2683838F0}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Level_Enviro_Cave" ID="{F261EBD2-3D03-47DA-B094-FF3759231679}" WorkUnitID="{3FC1D161-9E62-4D27-BDCB-25C2683838F0}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
