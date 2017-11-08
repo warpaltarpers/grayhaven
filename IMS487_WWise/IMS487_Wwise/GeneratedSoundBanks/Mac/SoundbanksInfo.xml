@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="125">
+	<RootPaths>
+		<ProjectRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\GeneratedSoundBanks\Mac\</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="152968626" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\SB_Main</ObjectPath>
+			<ShortName>SB_Main</ShortName>
+			<Path>SB_Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="908927922" Name="Level_Damage_Enemy" ObjectPath="\Events\Default Work Unit\Level_Damage_Enemy"/>
+				<Event Id="1814836401" Name="Level_Damage_Player" ObjectPath="\Events\Default Work Unit\Level_Damage_Player"/>
+				<Event Id="2440688257" Name="Level_Enviro_Cave" ObjectPath="\Events\Default Work Unit\Level_Enviro_Cave"/>
+				<Event Id="647710990" Name="Title_Score" ObjectPath="\Events\Default Work Unit\Title_Score"/>
+				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Default Work Unit\UI_Click"/>
+				<Event Id="17638345" Name="UI_Click_Error" ObjectPath="\Events\Default Work Unit\UI_Click_Error"/>
+				<Event Id="1075024023" Name="Wwise_Test" ObjectPath="\Events\Default Work Unit\Wwise_Test" MaxAttenuation="0.000000"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="12915222" Language="SFX">
+					<ShortName>IMS487_PlayerDMG.wav</ShortName>
+					<Path>SFX\IMS487_PlayerDMG_1C9C67B2.wem</Path>
+				</File>
+				<File Id="166143050" Language="SFX">
+					<ShortName>IMS487_ClickError.wav</ShortName>
+					<Path>SFX\IMS487_ClickError_1C9C67B2.wem</Path>
+				</File>
+				<File Id="418673312" Language="SFX">
+					<ShortName>IMS487_TitleTrack-1.wav</ShortName>
+					<Path>SFX\IMS487_TitleTrack-1_F17FB28C.wem</Path>
+				</File>
+				<File Id="875648919" Language="SFX">
+					<ShortName>IMS487_MenuClick.wav</ShortName>
+					<Path>SFX\IMS487_MenuClick_1C9C67B2.wem</Path>
+				</File>
+				<File Id="1047555207" Language="SFX">
+					<ShortName>IMS487_CaveEnvironment.wav</ShortName>
+					<Path>SFX\IMS487_CaveEnvironment_1C9C67B2.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

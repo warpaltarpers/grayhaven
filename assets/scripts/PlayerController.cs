@@ -122,6 +122,8 @@ public class PlayerController : MonoBehaviour
         if (isDamaged)
         {
             damageImage.color = flashColour;
+            //AkSound Test
+            AkSoundEngine.PostEvent("Level_Damage_Player", gameObject);
             //AudioSource.PlayClipAtPoint(dmg, transform.position, 3.0f);
         }
         else

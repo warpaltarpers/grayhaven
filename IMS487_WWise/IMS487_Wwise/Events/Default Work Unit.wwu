@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3FC1D161-9E62-4D27-BDCB-25C2683838F0}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{3FC1D161-9E62-4D27-BDCB-25C2683838F0}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Wwise_Test" ID="{A16A51DE-6FDE-45E1-AE53-D2A33CC0CFCA}">
+					<Comment>A test event as a pipeline referral. Should be labeled "[Missing]"</Comment>
+				</Event>
+				<Event Name="UI_Click" ID="{23FA4EDF-7617-414F-B9E9-693FAABD65BA}">
+					<Comment>Sound made when a UI element is clickable.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{43510387-9BE7-4151-ADCB-BEE4F65DFB19}" ShortID="234993359">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_MenuClick" ID="{87F269C2-5D05-4386-9595-6DB3C5AE5415}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Click_Error" ID="{27074A3A-C0D5-4498-BEFB-1671D99825BD}">
+					<Comment>Sound made when a UI element is unclickable.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{D34B849E-5987-4C47-8927-4459BA5DD5B3}" ShortID="1041193240">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_ClickError" ID="{43BD788B-3517-45AF-9DE7-955695010F3C}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Title_Score" ID="{393A17DB-82D9-4756-9E4F-24156BFC574E}">
+					<Comment>Activates the title track on the main menu.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{EF9C1546-37D1-4552-A868-1DF196B42DA5}" ShortID="619616441">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_TitleTrack-1" ID="{1F992848-12EC-4DC3-8D21-DB34E90DC845}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Damage_Player" ID="{BD77BA39-DBAD-47C5-BA2E-96BD092353C9}">
+					<Comment>Sound generated when the player takes damage.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{FE4027CB-491A-41CF-872C-F1B7CE7A23EC}" ShortID="979386139">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_PlayerDMG" ID="{9307FC94-99B5-47FB-91D0-56C5058037F2}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Damage_Enemy" ID="{8DB13CCF-8FAE-411D-A241-AE52BD0A8A2D}">
+					<Comment>Sound generated when an enemy takes damage. Temporarily the same as _Player.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{2A4B41E8-1688-4E38-9F40-6FD8BFE67AE0}" ShortID="85340743">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_PlayerDMG" ID="{9307FC94-99B5-47FB-91D0-56C5058037F2}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Enviro_Cave" ID="{F261EBD2-3D03-47DA-B094-FF3759231679}">
+					<Comment>The background sound to create an atmosphere for the vertical slice.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{8608D205-2D79-4B42-AC6F-BEF1A7758F3F}" ShortID="249767069">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_CaveEnvironment" ID="{2A557E50-BBBC-4C49-9B5D-0F0060CB9B31}" WorkUnitID="{107816A2-ABFD-4CBF-B441-160DEE6B5ECA}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
