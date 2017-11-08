@@ -36,10 +36,6 @@ public class MenuScriptTitle : MonoBehaviour
         {
             if (checker == 0)
             {
-                
-                PatrolEnemyAI.isPaused = true;
-                PlayerController.isPaused = true;
-                sentryAttack.isPaused = true;
                 Time.timeScale = 0;
                 checker = 1;
                 pauseButton.SetActive (true);
@@ -49,9 +45,6 @@ public class MenuScriptTitle : MonoBehaviour
                 Time.timeScale = 1;
                 checker = 0;
                 pauseButton.SetActive(false);
-                PatrolEnemyAI.isPaused = false;
-                PlayerController.isPaused = false;
-                sentryAttack.isPaused = false;
             }
          
         }
