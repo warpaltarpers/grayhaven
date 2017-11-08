@@ -14,11 +14,19 @@ public class PatrolEnemyAI : MonoBehaviour {
 
     public static bool isPaused;
 
+    public bool attacking;
+
+    Animator anim;
 
     // Use this for initialization
     void Start() {
+        anim = GetComponent<Animator>();
+
         StartCoroutine("Patrol");
+
         Physics2D.queriesStartInColliders = false;
+
+       
     }
 
     // Update is called once per frame
@@ -31,8 +39,13 @@ public class PatrolEnemyAI : MonoBehaviour {
             // Move towards player if player in hit Raycast
             if (hit.collider != null && hit.collider.tag == "Player")
             {
+                
                 GetComponent<Rigidbody2D>().AddForce(Vector3.up * force + (hit.collider.transform.position - transform.position) * force);
+                anim.SetTrigger("PatrolAttack");
+                attacking = true;
             }
+
+            attacking = false;
 
             // Check health
             if (health <= 0)
@@ -45,27 +58,33 @@ public class PatrolEnemyAI : MonoBehaviour {
 
     // Patrol code
     IEnumerator Patrol() {
-        while (true && isPaused == false) {
+        while (true && isPaused == false && attacking == false) {
+            
             // If at a patrol point, wait and set next patrol point
             if (transform.position.x == patrolpoints[currentPoint].position.x) {
                 currentPoint++;
+                anim.SetTrigger("stopWalking");
                 yield return new WaitForSeconds(timestill);
+
             }
 
             // If at the last patrol point, reset patrol point index
             if (currentPoint >= patrolpoints.Length) {
                 currentPoint = 0;
+
             }
 
             // Setting move direction and "facing" position
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(patrolpoints[currentPoint].position.x, transform.position.y), speed);
             if (transform.position.x > patrolpoints[currentPoint].position.x) {
                 transform.localScale = new Vector3(-1, 1, 1);
+                anim.SetTrigger("startWalk");
             }
             else if (transform.position.x < patrolpoints[currentPoint].position.x) {
                 transform.localScale = Vector3.one;
+                anim.SetTrigger("startWalk");
             }
-            
+
             yield return null;
         }
     }
