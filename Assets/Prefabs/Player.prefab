@@ -175,7 +175,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1858616847620418}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06800079, y: 0.79900074, z: 0}
+  m_LocalPosition: {x: -0.06800079, y: 0.79900074, z: -0.0003004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4252348246876604}
@@ -216,7 +216,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1339615890396530}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 59.65, y: 10.4, z: 0}
+  m_LocalPosition: {x: 59.65, y: 10.4, z: 0.0003004}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4112110303283864}
@@ -541,8 +541,9 @@ MonoBehaviour:
   maxSpeed: 10
   playerHealth: 100
   meleeAttack: {fileID: 1310334876332050}
-  isGrounded: 0
+  isGrounded: 1
   jumpForce: 800
+  healthSlider: {fileID: 0}
   swordLength: 0.75
   meleeRay: {fileID: 1939077623549056}
   enemyBasic: {fileID: 1002183856576660, guid: 36152651445890f499e8a4dac0c7ad84, type: 2}
