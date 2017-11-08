@@ -35,14 +35,12 @@ public class sentry : MonoBehaviour {
     public Transform shootPointBelow;
 
 
-    public Animator anim;
+
 
 
     private void Awake()
     {
         sentryAttackScript = gameObject.GetComponentInChildren<sentryAttack>();
-
-        anim = GetComponent<Animator>();
 
     }
 
@@ -131,56 +129,49 @@ public class sentry : MonoBehaviour {
     }
 
     //attack function that is called in sentryAttack.cs
-    //the trigger "isAttacking" starts the sentryAttack animation
-    // the sentryAttack animation has an event that runs the spawnProjectile function
     public void Attack(bool attackingRight)
     {
         projectileTimer += Time.deltaTime;
 
         if(projectileTimer >= shootInterval)
         {
-           
-            anim.SetTrigger("isAttacking");
+            Vector2 direction = target.transform.position - transform.position;
+            direction.Normalize();
+
+			GameObject projectileClone;
+            projectileClone = Instantiate(projectile, shootPointBelow.transform.position, shootPointBelow.transform.rotation) as GameObject;
+			projectileClone.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
+
+			projectileTimer = 0;
+
+			/*had code for sentry that was floor level and would fire from the left and right of its body.
+			 * utilizing shootpoint left and shootpoint right.
+			* Currently the sentry fires from one spot on its body (shootPointBelow).
+			* 
+		   if(!attackingRight)
+		   {
+			   GameObject projectileClone;
+			   projectileClone = Instantiate(projectile, shootPointLeft.transform.position, shootPointLeft.transform.rotation) as GameObject;
+			   projectileClone.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
+
+			   projectileTimer = 0;
+		   }
+
+
+		   if(attackingRight)
+		   {
+			   GameObject projectileClone;
+			   projectileClone = Instantiate(projectile, shootPointRight.transform.position, shootPointRight.transform.rotation) as GameObject;
+			   projectileClone.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
+
+			   projectileTimer = 0;
+		   }
+		   */
+
         }
 
     }
 
-
-    public void spawnProjectile()
-    {
-        Vector2 direction = target.transform.position - transform.position;
-        direction.Normalize();
-
-        GameObject projectileClone;
-        projectileClone = Instantiate(projectile, shootPointBelow.transform.position, shootPointBelow.transform.rotation) as GameObject;
-        projectileClone.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
-
-        projectileTimer = 0;
-
-        /*had code for sentry that was floor level and would fire from the left and right of its body.
-         * utilizing shootpoint left and shootpoint right.
-        * Currently the sentry fires from one spot on its body (shootPointBelow).
-        * 
-       if(!attackingRight)
-       {
-           GameObject projectileClone;
-           projectileClone = Instantiate(projectile, shootPointLeft.transform.position, shootPointLeft.transform.rotation) as GameObject;
-           projectileClone.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
-
-           projectileTimer = 0;
-       }
-
-
-       if(attackingRight)
-       {
-           GameObject projectileClone;
-           projectileClone = Instantiate(projectile, shootPointRight.transform.position, shootPointRight.transform.rotation) as GameObject;
-           projectileClone.GetComponent<Rigidbody2D>().velocity = direction * projectileSpeed;
-
-           projectileTimer = 0;
-       }
-       */
-    }
 
     public void EnemyTakeDamage(int damage)
 	{

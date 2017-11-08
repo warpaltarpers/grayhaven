@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114187938321903680}
   m_Layer: 0
   m_Name: sentryProjectile
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,7 +79,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.28, y: 1.28}
+    oldSize: {x: 0.64, y: 0.64}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -99,6 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4af2e671530b47b28a07dbd658e6fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shootThrough: 0
 --- !u!212 &212433425452073744
 SpriteRenderer:
   m_ObjectHideFlags: 1
