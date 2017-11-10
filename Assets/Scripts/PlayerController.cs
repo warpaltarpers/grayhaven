@@ -5,15 +5,15 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float maxSpeed = 10f;
-	public int playerHealth = 100;
+	public int playerHealth = 80;
     public GameObject meleeAttack;
     public bool isGrounded;
     public float jumpForce = 700;
-    public Slider healthSlider;
+
     public float swordLength;
     public GameObject meleeRay;
     public GameObject enemyBasic;
-    public EnemyBasic enemy;
+    
     public AudioClip dmg;
 
     //Flashing Damage
@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
 
     private bool isDamaged;
+    public static bool isPaused; //necessary for the pause menu
 
     Camera mainCamera;
 
@@ -39,13 +40,14 @@ public class PlayerController : MonoBehaviour
     private Collider2D other;
     private Vector2 meleeStrike;
 
+    public Vector3 checkPointPos;
+
 
 	void Start ()
 	{ 
 		// This allows for the sprites to change based on the code being run
 		anim = GetComponent<Animator> ();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
-        //respawnPoint = transform.position;
 	}
 	void FixedUpdate ()
 	{
@@ -109,8 +111,8 @@ public class PlayerController : MonoBehaviour
             if (hit != null && hit.collider != null && hit.collider.tag == "Enemy")
             {
                 enemyBasic = hit.collider.gameObject;
-                enemy = enemyBasic.GetComponent<EnemyBasic>();
-                enemy.TakeDamage();
+                //enemy = enemyBasic.GetComponent<EnemyBasic>();
+                //enemy.TakeDamage();
             }
         }
                   
@@ -122,13 +124,13 @@ public class PlayerController : MonoBehaviour
         if (isDamaged)
         {
             damageImage.color = flashColour;
-            AudioSource.PlayClipAtPoint(dmg, transform.position, 3.0f);
+            //AudioSource.PlayClipAtPoint(dmg, transform.position, 3.0f);
         }
         else
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);
         isDamaged = false;
 
-        
+
 
 
 		//flip by using right joystick
@@ -142,13 +144,12 @@ public class PlayerController : MonoBehaviour
 
 
 	}
-
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Checkpoint")
         {
-            GameController.instance.respawnPoint = other.gameObject.GetComponent<checkpointController>()
-;       Debug.Log("输出2");
+            checkPointPos = other.transform.position;
+;           Debug.Log("输出2");
         }
     }
 
@@ -163,10 +164,12 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enemy"))        {
-            playerHealth -= 20;
+        if (other.gameObject.CompareTag("Enemy") && isPaused == false)        {
+
+           
+            gameObject.GetComponent<HeartSystem>().TakeDamage(-2);
             isDamaged = true;
-            healthSlider.value = playerHealth;
+ 
         }
     }
 
