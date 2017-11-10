@@ -9,20 +9,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 411f2693aec84934280041317094f1af, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 1
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{3FC1D161-9E62-4D27-BDCB-25C2683838F0}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1422338078
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -923336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List:
     - Name: Level_Damage_Enemy
       Path: Default Work Unit/Level_Damage_Enemy
@@ -98,49 +93,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{2F13A813-8B74-4687-A531-94E660451CC5}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1422839397
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -923336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List: []
   StateWwu:
   - PhysicalPath: States/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B2918752-5846-4CB2-B115-24F52B209DD8}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1433029533
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -913336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List: []
   SwitchWwu:
   - PhysicalPath: Switches/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{1CE71AF4-40CB-4653-933A-EC87C0C28AD4}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1433139838
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -913336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{88091D7F-78C9-4ED0-802F-3AA288D5B124}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1433169913
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -913336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List:
     - Name: SB_Main
       Path: Default Work Unit/SB_Main
@@ -155,24 +130,14 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4D5E8210-1208-497D-A66E-FB19A9A2CF2D}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1422187668
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -923336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List: []
   - PhysicalPath: Game Parameters/Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1421886888
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -923336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List:
     - Name: SS_Air_Fear
       Path: Factory SoundSeed Air Game Syncs/SS_Air_Fear
@@ -268,24 +233,14 @@ MonoBehaviour:
   - PhysicalPath: Triggers/Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B2E0C575-CACE-4FC0-9972-85C5DC29838A}'
-<<<<<<< HEAD
-    m_lastTimePsrt1: 1433190024
-    m_lastTimePart2: -1999296557
-=======
     m_lastTimePsrt1: -913336832
     m_lastTimePart2: -1999296832
->>>>>>> sound
     List: []
-  ExpandedItems:
-  - /IMS487_Wwise
-  - /IMS487_Wwise/Events
-  - /IMS487_Wwise/Events/Default Work Unit
-  - /IMS487_Wwise/SoundBanks
-  - /IMS487_Wwise/SoundBanks/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
-  basePath: Audio\GeneratedSoundBanks
+  basePath: Audio/GeneratedSoundBanks
   language: English(US)
   defaultPoolSize: 4096
   lowerPoolSize: 2048
