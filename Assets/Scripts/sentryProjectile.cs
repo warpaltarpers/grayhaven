@@ -18,7 +18,7 @@ public class sentryProjectile : MonoBehaviour {
                  * too call here like takeDamage(5);
                  *
                  */
-             //   col.GetComponent<PlayerController>().playerHealth -=5;
+                col.GetComponent<HeartSystem>().TakeDamage(-1);
             }
 
 

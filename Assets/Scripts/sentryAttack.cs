@@ -14,6 +14,8 @@ public class sentryAttack : MonoBehaviour {
 
     public sentry sentry;
 
+    public static bool isPaused;
+
     //bool used if sentry triggers are on the left and right and not below. 
     //There are triggers not being used that can be used if the sentry needs to shoot left and right
     public bool isLeft = false;
@@ -66,9 +68,13 @@ public class sentryAttack : MonoBehaviour {
 
             //if player is in the trigger and the sentry is looking that direction
             //attack
-            if (playerSighted == true)
+            if (playerSighted == true && isPaused == false)
             {
                 sentry.Attack(true);
+            }
+            else
+            {
+                sentry.anim.SetTrigger("setIdle");
             }
 
         }
@@ -77,7 +83,9 @@ public class sentryAttack : MonoBehaviour {
     private void OnTriggerExit2D(Collider2D col)
     {
         if (col.CompareTag("Player")){
-           playerSighted = false; 
+           playerSighted = false;
+            sentry.anim.SetTrigger("setIdle");
+            sentry.anim.ResetTrigger("isAttacking");
         }
 
     }
