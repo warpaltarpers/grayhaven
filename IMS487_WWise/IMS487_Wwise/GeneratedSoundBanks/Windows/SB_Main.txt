@@ -13,9 +13,9 @@ Effect plug-ins	ID	Name	Type				Notes
 	3948262040	Octave_Down	Wwise Pitch Shifter			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	12915222	IMS487_PlayerDMG	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_PlayerDMG_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_PlayerDMG		352864
-	166143050	IMS487_ClickError	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_ClickError_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_ClickError		352864
-	418673312	IMS487_TitleTrack-1	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_TitleTrack-1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_TitleTrack-1		15052872
-	875648919	IMS487_MenuClick	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_MenuClick_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_MenuClick		352864
-	1047555207	IMS487_CaveEnvironment	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_CaveEnvironment_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_CaveEnvironment		8478292
+	12915222	IMS487_PlayerDMG	C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_PlayerDMG_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_PlayerDMG		352864
+	166143050	IMS487_ClickError	C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_ClickError_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_ClickError		352864
+	418673312	IMS487_TitleTrack-1	C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_TitleTrack-1_F17FB28C.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_TitleTrack-1		15052872
+	875648919	IMS487_MenuClick	C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_MenuClick_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_MenuClick		352864
+	1047555207	IMS487_CaveEnvironment	C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\.cache\Windows\SFX\IMS487_CaveEnvironment_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_CaveEnvironment		8478292
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="11" SoundbankVersion="125">
 	<RootPaths>
-		<ProjectRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\</ProjectRoot>
-		<SourceFilesRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\.cache\Windows\</SourceFilesRoot>
-		<SoundBanksRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ProjectRoot>C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\GeneratedSoundBanks\Windows\</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WWise\IMS487_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>C:\Users\mandc\Desktop\Greyhaven\IMS487_WWise\IMS487_Wwise\GeneratedSoundBanks\Windows\</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
