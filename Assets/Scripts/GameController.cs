@@ -32,15 +32,15 @@ public class GameController : MonoBehaviour {
 	void Update () {
 
         playerHealth = player.GetComponent<PlayerController>().playerHealth;
-        if(playerHealth <= 0)        {
-            Destroy(player);
-            Debug.Log("输出3");
-            if (respawnPoint != null)
-            {
-                player = respawnPoint.CreatePlayer();
-                Debug.Log("输出4");
-            };
-        }
+      // if(playerHealth <= 0)        {
+           // Destroy(player);
+           // Debug.Log("输出3");
+           // if (respawnPoint != null)
+           // {
+           //     player = respawnPoint.CreatePlayer();
+           //     Debug.Log("输出4");
+          //  };
+       // }
 
         if (numOfEnemies <= 0)
         {
