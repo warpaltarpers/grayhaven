@@ -7,10 +7,18 @@ public class MenuScriptTitle : MonoBehaviour
 {
     private int checker = 0; // acting as lightswitch for pause menu
     public GameObject pauseButton;
+    public GameObject player;
     public GameObject gameOverButton;
     public GameObject gameOverText;
     public GameObject healthChecker; // for checking to see if need to gameover
     private HeartSystem heartSystem;  // getting heart system code
+
+    public static MenuScriptTitle instance;
+
+    //void Awake()
+    //{
+       
+    //}
 
     public void ChangeScene(string sceneName) // Get an input from button thats the scene name, change to that scene.
     {
@@ -20,6 +28,7 @@ public class MenuScriptTitle : MonoBehaviour
 
     private void Awake()
     {
+        instance = this;
         // Set all these UI elements to not be visible or interactible.
         pauseButton.SetActive(false);
         gameOverButton.SetActive(false);
@@ -36,13 +45,13 @@ public class MenuScriptTitle : MonoBehaviour
         {
             if (checker == 0)
             {
-                
+
                 PatrolEnemyAI.isPaused = true;
-                PlayerController.isPaused = true;
-                sentryAttack.isPaused = true;
+                PlayerController.isPaused = false;
+                sentryAttack.isPaused = false;
                 Time.timeScale = 0;
                 checker = 1;
-                pauseButton.SetActive (true);
+                pauseButton.SetActive(false);
             }
             else
             {
@@ -53,18 +62,19 @@ public class MenuScriptTitle : MonoBehaviour
                 PlayerController.isPaused = false;
                 sentryAttack.isPaused = false;
             }
-         
+
         }
 
 
         // Game over code (also set up in the same PauseGameObject as pause menu)
-            if (heartSystem.curHealth == 0)
-            {
-                Time.timeScale = 0; 
-                gameOverButton.SetActive(true);
-                gameOverText.SetActive(true);
-            }
+        if (heartSystem.curHealth == 0)
+        {
+            //Destroy(player);
+            Vector3 pos = player.GetComponent<PlayerController>().checkPointPos;
+            player.transform.position = new Vector3(pos.x,pos.y+0.5f,0);
+            heartSystem.InitHP();
+            Debug.Log("输出3");
+        }
     }
-    
-
 }
+    
