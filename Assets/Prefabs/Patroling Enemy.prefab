@@ -213,6 +213,7 @@ MonoBehaviour:
   sight: 4
   force: 2
   health: 16
+  attacking: 0
 --- !u!114 &114707456740418198
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -254,8 +255,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -793085081
-  m_SortingLayer: 1
+  m_SortingLayerID: 1319275245
+  m_SortingLayer: -3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 970002d365d787942ae76d07f27c344c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
