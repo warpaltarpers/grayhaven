@@ -18,7 +18,7 @@ public class BarScript : MonoBehaviour
     private float lerpSpeed; // how fast it trickles from one value to the next.
 
     public float MaxValue { get; set; }
-
+    // comment
     public float Value
     {
         set
