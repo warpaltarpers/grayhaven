@@ -45,7 +45,6 @@ public class MenuScriptTitle : MonoBehaviour
         {
             if (checker == 0)
             {
-                
                 PatrolEnemyAI.isPaused = true;
                 PlayerController.isPaused = true;
                 sentryAttack.isPaused = true;
