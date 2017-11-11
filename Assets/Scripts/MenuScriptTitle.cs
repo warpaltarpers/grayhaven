@@ -8,8 +8,8 @@ public class MenuScriptTitle : MonoBehaviour
     private int checker = 0; // acting as lightswitch for pause menu
     public GameObject pauseButton;
     public GameObject gameOverButton;
-    public GameObject quitButton;
-    public GameObject quitButton2;
+    //public GameObject quitButton;
+    //public GameObject quitButton2;
     public GameObject gameOverText;
     public GameObject healthChecker; // for checking to see if need to gameover
     private HeartSystem heartSystem;  // getting heart system code
@@ -29,8 +29,8 @@ public class MenuScriptTitle : MonoBehaviour
     {
         // Set all these UI elements to not be visible or interactible.
         pauseButton.SetActive(false);
-        quitButton.SetActive(false);
-        quitButton2.SetActive(false);
+        //quitButton.SetActive(false);
+        //quitButton2.SetActive(false);
         gameOverButton.SetActive(false);
         gameOverText.SetActive(false);
         heartSystem = healthChecker.GetComponent<HeartSystem>(); // linking them together so I can refrence that stuff
@@ -52,14 +52,14 @@ public class MenuScriptTitle : MonoBehaviour
                 Time.timeScale = 0;
                 checker = 1;
                 pauseButton.SetActive (true);
-                quitButton.SetActive(true);
+                //quitButton.SetActive(true);
             }
             else
             {
                 Time.timeScale = 1;
                 checker = 0;
                 pauseButton.SetActive(false);
-                quitButton.SetActive(false);
+               // quitButton.SetActive(false);
                 PatrolEnemyAI.isPaused = false;
                 PlayerController.isPaused = false;
                 sentryAttack.isPaused = false;
@@ -73,7 +73,7 @@ public class MenuScriptTitle : MonoBehaviour
             {
                 Time.timeScale = 0; 
                 gameOverButton.SetActive(true);
-                quitButton.SetActive(true);
+                //quitButton.SetActive(true);
                 gameOverText.SetActive(true);
             }
     }
