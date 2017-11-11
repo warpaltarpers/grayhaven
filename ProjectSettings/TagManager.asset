@@ -44,20 +44,38 @@ TagManager:
   - name: Background
     uniqueID: 534386415
     locked: 0
+  - name: Background1
+    uniqueID: 1442322577
+    locked: 0
   - name: Floor
     uniqueID: 1527650239
     locked: 0
-  - name: Default
-    uniqueID: 0
+  - name: Platforms
+    uniqueID: 2843316563
     locked: 0
-  - name: Default2
+  - name: Back3
+    uniqueID: 717094591
+    locked: 0
+  - name: Back2
     uniqueID: 3501882215
     locked: 0
-  - name: Default3
-    uniqueID: 717094591
+  - name: Back
+    uniqueID: 543691345
     locked: 0
   - name: Player
     uniqueID: 2102301043
+    locked: 0
+  - name: Enemy
+    uniqueID: 1319275245
+    locked: 0
+  - name: Front
+    uniqueID: 127669427
+    locked: 0
+  - name: Front2
+    uniqueID: 2305210939
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
   - name: Foreground
     uniqueID: 4028190883
