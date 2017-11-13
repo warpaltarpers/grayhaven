@@ -98,7 +98,6 @@ public class HeartSystem : MonoBehaviour {
         curHealth += amount;
         curHealth = Mathf.Clamp(curHealth, 0, startHearts * healthPerHeart); // keeps health between 0 and max allowed
         UpdateHearts(); // after we do this, update the images please.
-        print("Sucks to suck");
     }
 
     public void AddHeartContainer () // increasing max hearts; currently not really possible.
