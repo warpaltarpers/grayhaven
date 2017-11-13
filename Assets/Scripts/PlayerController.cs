@@ -5,7 +5,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float maxSpeed = 10f;
-	public int playerHealth = 80;
+	public int playerHealth = 100;
     public GameObject meleeAttack;
     public bool isGrounded;
     public float jumpForce = 700;
@@ -40,8 +40,6 @@ public class PlayerController : MonoBehaviour
     private Collider2D other;
     private Vector2 meleeStrike;
 
-    public Vector3 checkPointPos;
-
 
 	void Start ()
 	{ 
@@ -60,6 +58,11 @@ public class PlayerController : MonoBehaviour
 
 		// Gets input from the keyboard and reads how much the player is moving
 		float move = Input.GetAxis ("Horizontal");
+
+        float moveForward = Input.GetAxis("Horizontal");
+        float moveBackward = Input.GetAxis("Horizontal");
+        anim.SetFloat("moveForward", moveForward);
+        anim.SetFloat("moveBackward", moveBackward);
 
 		// Controls the movement animation
 		//anim.SetFloat("Speed", Mathf.Abs(move));
@@ -95,6 +98,9 @@ public class PlayerController : MonoBehaviour
 			gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 		}
 
+
+
+
         /*
          * If fire button is pressed, activate meleeAttack game object for X seconds (determined by meleeDuration)
          * RT is a trigger has value between -1.0f and 1.0f. Snap setting in Input manager gives it value of 0 or 1.
@@ -104,6 +110,7 @@ public class PlayerController : MonoBehaviour
         float primaryAttack = Input.GetAxis("primaryAttack");
         if (primaryAttack > 0)
         {
+            anim.SetTrigger("rayAttack");
             meleeAttack.SetActive(true);
             attackDuration = Time.time + meleeDuration;
             Debug.DrawRay(meleeRay.transform.position, meleeStrike, Color.green, swordLength);
@@ -114,6 +121,10 @@ public class PlayerController : MonoBehaviour
                 //enemy = enemyBasic.GetComponent<EnemyBasic>();
                 //enemy.TakeDamage();
             }
+        }
+
+        if(Input.GetKeyDown("1")){
+            anim.SetTrigger("rayAttack");
         }
                   
         if(meleeAttack.activeInHierarchy && Time.time > attackDuration)
@@ -144,18 +155,11 @@ public class PlayerController : MonoBehaviour
 
 
 	}
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.tag == "Checkpoint")
-        {
-            checkPointPos = other.transform.position;
-;           Debug.Log("输出2");
-        }
-    }
 
+	
 
-    // Creates a function that will automatically flip the animation when the player changes directions 
-    void Flip(){
+	// Creates a function that will automatically flip the animation when the player changes directions 
+	void Flip(){
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
@@ -166,7 +170,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy") && isPaused == false)        {
 
-           
+       
             gameObject.GetComponent<HeartSystem>().TakeDamage(-2);
             isDamaged = true;
  

@@ -24536,7 +24536,7 @@ Prefab:
     - target: {fileID: 212959509601521188, guid: bd092cfde81ad5040af34dd2427cf6c9,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 212926352836902112, guid: bd092cfde81ad5040af34dd2427cf6c9,
         type: 2}
@@ -24546,7 +24546,7 @@ Prefab:
     - target: {fileID: 212926352836902112, guid: bd092cfde81ad5040af34dd2427cf6c9,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114324468262740182, guid: bd092cfde81ad5040af34dd2427cf6c9,
         type: 2}
@@ -24566,7 +24566,7 @@ Prefab:
     - target: {fileID: 212213636653374932, guid: bd092cfde81ad5040af34dd2427cf6c9,
         type: 2}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 20364205859561062, guid: bd092cfde81ad5040af34dd2427cf6c9,
         type: 2}
@@ -27551,6 +27551,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseButton: {fileID: 1982929859}
+  player: {fileID: 0}
   gameOverButton: {fileID: 484033139}
   quitButton: {fileID: 457824169}
   quitButton2: {fileID: 2135786753}
