@@ -5,7 +5,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
 	public float maxSpeed = 10f;
-	public int playerHealth = 100;
+	public int playerHealth = 80;
     public GameObject meleeAttack;
     public bool isGrounded;
     public float jumpForce = 700;
@@ -39,6 +39,8 @@ public class PlayerController : MonoBehaviour
 
     private Collider2D other;
     private Vector2 meleeStrike;
+
+    public Vector3 checkPointPos;
 
 
 	void Start ()
@@ -142,11 +144,18 @@ public class PlayerController : MonoBehaviour
 
 
 	}
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Checkpoint")
+        {
+            checkPointPos = other.transform.position;
+;           Debug.Log("输出2");
+        }
+    }
 
-	
 
-	// Creates a function that will automatically flip the animation when the player changes directions 
-	void Flip(){
+    // Creates a function that will automatically flip the animation when the player changes directions 
+    void Flip(){
 		facingRight = !facingRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
@@ -157,7 +166,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy") && isPaused == false)        {
 
-       
+           
             gameObject.GetComponent<HeartSystem>().TakeDamage(-2);
             isDamaged = true;
  

@@ -25,9 +25,13 @@ public class HeartSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        InitHP();
+        CheckHealthAmount();
+    }
+    public void InitHP()
+    {
         curHealth = startHearts * healthPerHeart; // number of health points is number of heart containters * pieces in each heart.
         maxHealth = maxHeartAmount * healthPerHeart; // hardcap on how much hp you can have, based on a similar equation as above.
-        CheckHealthAmount();
     }
 
     private void Update()
@@ -94,7 +98,6 @@ public class HeartSystem : MonoBehaviour {
         curHealth += amount;
         curHealth = Mathf.Clamp(curHealth, 0, startHearts * healthPerHeart); // keeps health between 0 and max allowed
         UpdateHearts(); // after we do this, update the images please.
-        print("Sucks to suck");
     }
 
     public void AddHeartContainer () // increasing max hearts; currently not really possible.
