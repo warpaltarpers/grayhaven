@@ -365,7 +365,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 2.2125}
+    oldSize: {x: 2, y: 3.54}
     newSize: {x: 1.25, y: 2.2125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -390,7 +390,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 2.2125}
+    oldSize: {x: 2, y: 3.54}
     newSize: {x: 1.25, y: 2.2125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -541,12 +541,11 @@ MonoBehaviour:
   maxSpeed: 10
   playerHealth: 100
   meleeAttack: {fileID: 1310334876332050}
-  isGrounded: 0
+  isGrounded: 1
   jumpForce: 800
   swordLength: 0.75
   meleeRay: {fileID: 1939077623549056}
-  enemyBasic: {fileID: 1002183856576660, guid: 36152651445890f499e8a4dac0c7ad84, type: 2}
-  enemy: {fileID: 0}
+  enemyBasic: {fileID: 1807845562322772, guid: 243622ae677c26f409a19651d7d5d7e1, type: 2}
   dmg: {fileID: 8300000, guid: 1a9a3122f71a78642bc35328aa81a750, type: 3}
   damageImage: {fileID: 0}
   flashSpeed: 5
