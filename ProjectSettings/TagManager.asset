@@ -50,9 +50,6 @@ TagManager:
   - name: Floor
     uniqueID: 1527650239
     locked: 0
-  - name: cutout
-    uniqueID: 2783987263
-    locked: 0
   - name: Platforms
     uniqueID: 2627123129
     locked: 0
@@ -76,6 +73,9 @@ TagManager:
     locked: 0
   - name: Front2
     uniqueID: 2629654651
+    locked: 0
+  - name: cutout
+    uniqueID: 2783987263
     locked: 0
   - name: Foreground
     uniqueID: 4028190883
