@@ -10,11 +10,13 @@ public class MenuScriptTitle : MonoBehaviour
     public GameObject player;
     public GameObject gameOverButton;
     public GameObject quitButton;
+    public GameObject respawnButton;
     public GameObject quitButton2;
     public GameObject gameOverText;
+    public GameObject checkpoint;
     public GameObject healthChecker; // for checking to see if need to gameover
     private HeartSystem heartSystem;  // getting heart system code
-
+    private checkpointController checkpntCont;
     public static MenuScriptTitle instance;
 
     //void Awake()
@@ -37,7 +39,10 @@ public class MenuScriptTitle : MonoBehaviour
         quitButton2.SetActive(false);
         gameOverButton.SetActive(false);
         gameOverText.SetActive(false);
+        respawnButton.SetActive(false);
         heartSystem = healthChecker.GetComponent<HeartSystem>(); // linking them together so I can refrence that stuff
+
+        checkpntCont = checkpoint.GetComponent<checkpointController>();
     }
 
 
@@ -49,12 +54,11 @@ public class MenuScriptTitle : MonoBehaviour
         {
             if (checker == 0)
             {
-
-                PatrolEnemyAI.isPaused = true;
-                PlayerController.isPaused = false;
-                sentryAttack.isPaused = false;
                 Time.timeScale = 0;
                 checker = 1;
+                PatrolEnemyAI.isPaused = true;
+                PlayerController.isPaused = true;
+                sentryAttack.isPaused = true;
                 pauseButton.SetActive (true);
                 quitButton.SetActive(true);
             }
@@ -74,12 +78,41 @@ public class MenuScriptTitle : MonoBehaviour
 
         // Game over code (also set up in the same PauseGameObject as pause menu)
         if (heartSystem.curHealth == 0)
-            {
+        {
                 Time.timeScale = 0; 
                 gameOverButton.SetActive(true);
-                //quitButton.SetActive(true);
+                quitButton2.SetActive(true);
                 gameOverText.SetActive(true);
-            }
+                respawnButton.SetActive(true);
+        }
+
+    }
+
+    public void RespawnPlayer()
+    {
+        // If player hasnt touched a checkpoint, restart level.  otherwise, restart at checkpoint
+        Time.timeScale = 1;
+        gameOverButton.SetActive(false);
+        quitButton2.SetActive(false);
+        gameOverText.SetActive(false);
+        respawnButton.SetActive(false);
+        heartSystem.InitHP();
+        if (checkpntCont.checkpointReached == false)
+        {
+            SceneManager.LoadScene("RedKingdomLevelv3");
+        }
+        else
+        {
+            //Destroy(player);
+            Vector3 pos = player.GetComponent<PlayerController>().checkPointPos;
+            player.transform.position = new Vector3(pos.x, pos.y + 0.5f, 0);
+            print("Respawn!");
+        }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
     

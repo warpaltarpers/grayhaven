@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="Project" SchemaVersion="80" WwiseVersion="v2017.1.1" WwiseBuild="6340">
 	<ProjectInfo>
-		<Project Name="IMS487_Wwise" ID="{72496D99-C4F8-4BB3-BDF6-4DC111C01DEC}">
+		<Project Name="IMS487_Wwise" ID="{A1B9863B-ED7E-4B04-9728-79E8F89D7697}">
 			<Platforms>
-				<Platform Name="Linux" ReferencePlatform="Linux" ID="{0A990182-5693-429B-A25E-B4BACA073D3D}" />
-				<Platform Name="Mac" ReferencePlatform="Mac" ID="{F81EE180-C41E-4E9F-8AC0-D6D3D63D9B9F}" />
-				<Platform Name="Windows" ReferencePlatform="Windows" ID="{E8B706BA-3D13-4999-8D41-D7E4CF5DC75C}" />
+				<Platform Name="Linux" ReferencePlatform="Linux" ID="{5487EEF6-F70E-432F-B155-3DEFE1A2F9E1}" />
+				<Platform Name="Mac" ReferencePlatform="Mac" ID="{7DEC3822-9D59-4B58-9535-CB940F70F1D4}" />
+				<Platform Name="Windows" ReferencePlatform="Windows" ID="{2668BA6E-C4B0-4AA9-BC0E-C0464F6C4354}" />
 			</Platforms>
 			<LanguageList>
-				<Language Name="English(US)" ID="{FFACA5E7-51BE-41FE-9AB7-6C160B8E3E2A}" />
-				<Language Name="External" ID="{B7225837-ACC9-4192-9FA1-B81C0E6DB71F}" />
-				<Language Name="Mixed" ID="{58DDD9F3-4A85-47BD-8766-5F26183DFF38}" />
-				<Language Name="SFX" ID="{3E67281B-840A-4161-8A12-C9F1964AC377}" />
+				<Language Name="English(US)" ID="{C7D5747B-1B17-4111-9AB2-FCE099F053C7}" />
+				<Language Name="External" ID="{1203723D-3267-441C-8B50-693D04F693EF}" />
+				<Language Name="Mixed" ID="{8F5E5DC0-E5DA-410E-A4DA-8AB195C23148}" />
+				<Language Name="SFX" ID="{5806DCAA-8523-48E1-94B2-82031625E6AA}" />
 			</LanguageList>
 			<PropertyList>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -28,7 +28,7 @@
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
 					</ValueList>
 				</Property>
-				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="C:\Users\simpso12\Desktop\IMS487-design\Assets\StreamingAssets\Audio\GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Linux">GeneratedSoundBanks\Linux\</Value>
@@ -9820,7 +9820,7 @@
 					<Comment></Comment>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{514908EA-5966-402B-8E86-2F7FF6DF423C}">
+							<Curve Name="" ID="{AAECD3EB-65FD-44C9-B152-0E1A3031BAC5}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -9841,7 +9841,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{D3EF92CD-34B3-4405-BB3E-97B4287003ED}">
+							<Curve Name="" ID="{4213173D-840B-4CCE-ADC4-4A20A19A4812}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9862,7 +9862,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Obstruction" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{6777038E-3171-4D1F-86C2-B9AA3FE309AA}">
+							<Curve Name="" ID="{D54605D7-55D4-4CF4-B72E-CD29E868E94C}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9883,7 +9883,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="Volume">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{A824EC4D-45AF-42F3-A877-42BFD2BAF34F}">
+							<Curve Name="" ID="{FF282391-E648-4920-92ED-784E39C9BD58}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="3" />
 								</PropertyList>
@@ -9904,7 +9904,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="LPF">
 						<PlatformCurve Platform="Linked" EnableCurve="true">
-							<Curve Name="" ID="{F2019F1C-6806-45C6-90A5-4A70463FB36A}">
+							<Curve Name="" ID="{6F62269A-A6DC-4CB2-AFE1-1B31DE198C1F}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
@@ -9925,7 +9925,7 @@
 					</ObsOccCurve>
 					<ObsOccCurve CurveXType="Occlusion" CurveYType="HPF">
 						<PlatformCurve Platform="Linked" EnableCurve="false">
-							<Curve Name="" ID="{28F8B702-E7F6-45F4-870C-3742AAEEA43B}">
+							<Curve Name="" ID="{042A5560-4EE1-443A-92D0-164803F0FC91}">
 								<PropertyList>
 									<Property Name="Flags" Type="int32" Value="1" />
 								</PropertyList>
