@@ -71,7 +71,6 @@ MonoBehaviour:
   redFlag: {fileID: 21300000, guid: e1889e460132f004b9ca47f7ecf69368, type: 3}
   greenFlag: {fileID: 21300000, guid: b28662c6dd230444f867158ac768df38, type: 3}
   checkpointReached: 0
-  playerObj: {fileID: 1339615890396530, guid: bd092cfde81ad5040af34dd2427cf6c9, type: 2}
 --- !u!212 &212785116839610554
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -102,7 +101,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -266776413
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e1889e460132f004b9ca47f7ecf69368, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
