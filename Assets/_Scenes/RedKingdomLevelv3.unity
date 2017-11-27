@@ -6916,7 +6916,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -266776413
-  m_SortingOrder: 0
+  m_SortingOrder: 10000
   m_TargetDisplay: 0
 --- !u!224 &150393419
 RectTransform:
@@ -29058,7 +29058,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: -266776413
-  m_SortingOrder: 0
+  m_SortingOrder: 10000
   m_TargetDisplay: 0
 --- !u!1001 &867744063
 Prefab:
@@ -49827,11 +49827,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4273137905197842, guid: 8de9d7ae172a91c4bb7776c29b5c2cc9, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 55.968735
+      value: 288.5
       objectReference: {fileID: 0}
     - target: {fileID: 4273137905197842, guid: 8de9d7ae172a91c4bb7776c29b5c2cc9, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 13.828447
+      value: 51.82
       objectReference: {fileID: 0}
     - target: {fileID: 4273137905197842, guid: 8de9d7ae172a91c4bb7776c29b5c2cc9, type: 2}
       propertyPath: m_LocalPosition.z
