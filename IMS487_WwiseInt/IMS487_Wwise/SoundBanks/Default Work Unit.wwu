@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{AAC331A7-8359-4922-9F9C-E1895C8BF9FD}" SchemaVersion="80">
+<WwiseDocument Type="WorkUnit" ID="{B7738FE0-E0DB-4EA8-A75C-0215FF224848}" SchemaVersion="80">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{AAC331A7-8359-4922-9F9C-E1895C8BF9FD}" PersistMode="Standalone">
-			<ChildrenList>
-				<SoundBank Name="SB_Main" ID="{F52F1211-A637-4B99-A70A-83AE7167BA4A}">
-					<ObjectInclusionList>
-						<ObjectRef Name="Level_Enviro_Cave" ID="{FF550549-D9B5-4012-904B-42864AF376E7}" WorkUnitID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Level_Enemy_Dmg" ID="{7FE850AD-8B1F-40B7-B238-D2AE6BA65C66}" WorkUnitID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Title_Track" ID="{92859BB0-505D-498A-A437-B8D72C417B2A}" WorkUnitID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="UI_Error" ID="{4B8F38D1-5054-4B5B-842D-13DECB8BAED0}" WorkUnitID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="Level_Player_Dmg" ID="{C25BF4AD-BB2F-4E05-B0A3-FB2ACAB15F5F}" WorkUnitID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" Filter="7" Origin="Manual"/>
-						<ObjectRef Name="UI_Click" ID="{B6A6459B-4287-4EF6-B2F0-11E04ABDEBCB}" WorkUnitID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" Filter="7" Origin="Manual"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-			</ChildrenList>
-		</WorkUnit>
+		<WorkUnit Name="Default Work Unit" ID="{B7738FE0-E0DB-4EA8-A75C-0215FF224848}" PersistMode="Standalone"/>
 	</SoundBanks>
 </WwiseDocument>
