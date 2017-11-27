@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{E2A6B048-F3A0-4B61-96C4-2D150A9B78E9}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Title_Track" ID="{92859BB0-505D-498A-A437-B8D72C417B2A}">
+					<ChildrenList>
+						<Action Name="" ID="{B1D60A8F-5628-4353-868D-410EEACD90D1}" ShortID="976151783">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_TitleTrack-1" ID="{58986787-070A-44F9-AE22-D1E58F326256}" WorkUnitID="{FE07BD60-7E1E-4001-AADF-E8F87C851B14}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Enviro_Cave" ID="{FF550549-D9B5-4012-904B-42864AF376E7}">
+					<ChildrenList>
+						<Action Name="" ID="{13568DB2-D1C3-44D6-B38D-81DD96363FA1}" ShortID="350895955">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_CaveEnvironment" ID="{0BEECCDF-87EE-4242-9708-68D0D27D5310}" WorkUnitID="{FE07BD60-7E1E-4001-AADF-E8F87C851B14}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Player_Dmg" ID="{C25BF4AD-BB2F-4E05-B0A3-FB2ACAB15F5F}">
+					<ChildrenList>
+						<Action Name="" ID="{F9FE4F5B-9460-40B0-AEC8-013088F04696}" ShortID="228861158">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_PlayerDMG" ID="{9B551FDC-BD13-4829-8D80-487DB6B6111A}" WorkUnitID="{FE07BD60-7E1E-4001-AADF-E8F87C851B14}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Enemy_Dmg" ID="{7FE850AD-8B1F-40B7-B238-D2AE6BA65C66}">
+					<ChildrenList>
+						<Action Name="" ID="{17009416-FF4F-418F-9D4E-4BA1B629995F}" ShortID="599504586">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_PlayerDMG" ID="{9B551FDC-BD13-4829-8D80-487DB6B6111A}" WorkUnitID="{FE07BD60-7E1E-4001-AADF-E8F87C851B14}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Click" ID="{B6A6459B-4287-4EF6-B2F0-11E04ABDEBCB}">
+					<ChildrenList>
+						<Action Name="" ID="{A3259F21-65C8-49A0-8D51-B1AE879CB909}" ShortID="78078513">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_MenuClick" ID="{A9948A90-9064-444F-8622-3EDC47968475}" WorkUnitID="{FE07BD60-7E1E-4001-AADF-E8F87C851B14}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Error" ID="{4B8F38D1-5054-4B5B-842D-13DECB8BAED0}">
+					<ChildrenList>
+						<Action Name="" ID="{1D72C627-25C2-42DE-BEBB-8FD3409BE36B}" ShortID="964079245">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_ClickError" ID="{359FA2CB-F30F-4F65-940B-A5C378D8823A}" WorkUnitID="{FE07BD60-7E1E-4001-AADF-E8F87C851B14}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Wwise_Test" ID="{D9833588-5D08-47FE-9327-3A8CEDC78F1C}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
