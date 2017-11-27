@@ -40,13 +40,24 @@ public class PlayerController : MonoBehaviour
     private Collider2D other;
     private Vector2 meleeStrike;
 
+    public Vector3 checkPointPos;
 
-	void Start ()
+
+    void Start ()
 	{ 
 		// This allows for the sprites to change based on the code being run
 		anim = GetComponent<Animator> ();
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
 	}
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Checkpoint")
+        {
+            checkPointPos = other.transform.position;
+        }
+    }
+
 	void FixedUpdate ()
 	{
 		// This constantly checks whether or not the player is touching the ground
