@@ -6,6 +6,34 @@
 				<Event Name="Wwise_Test" ID="{82715907-FC12-46FC-92CC-BA74D662F564}">
 					<Comment>Should be labeled "[Missing]"</Comment>
 				</Event>
+				<Event Name="Title_Score" ID="{46849F65-A38F-45E2-9605-04A5145C6D31}">
+					<ChildrenList>
+						<Action Name="" ID="{6E5A5CAA-2EDE-4A76-A486-36FA4D471B37}" ShortID="100446949">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_TitleTrack-1" ID="{6039EE8C-9A84-44B2-AF51-D418A327D2E6}" WorkUnitID="{D05B6183-FAED-4AF1-8C62-2FA0359D5F15}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Level_Enviro_Cave" ID="{CCCCBE4E-C714-478B-916E-03D5C5AEFFCE}">
+					<ChildrenList>
+						<Action Name="" ID="{7FB6C2A7-76CF-46B6-B3A2-FC5FE8CA2A6F}" ShortID="470549142">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="IMS487_CaveEnvironment" ID="{E0FAF327-2ADE-42CD-89BC-E993D58F8C8F}" WorkUnitID="{D05B6183-FAED-4AF1-8C62-2FA0359D5F15}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

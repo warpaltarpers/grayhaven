@@ -16,9 +16,29 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4B1599BD-C451-40A2-A84B-44A9211D9775}'
-    m_lastTimePsrt1: -38051678
-    m_lastTimePart2: -1999293007
+    m_lastTimePsrt1: -1484930590
+    m_lastTimePart2: -1999292693
     List:
+    - Name: Level_Enviro_Cave
+      Path: Default Work Unit\Level_Enviro_Cave
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Level_Enviro_Cave
+        ObjectType: 3
+      ID: -1854279039
+      Guid: 4ebecccc14c78b47916e03d5c5aeffce
+      maxAttenuation: 0
+    - Name: Title_Score
+      Path: Default Work Unit\Title_Score
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Title_Score
+        ObjectType: 3
+      ID: 647710990
+      Guid: 659f84468fa3e245960504a5145c6d31
+      maxAttenuation: 0
     - Name: Wwise_Test
       Path: Default Work Unit\Wwise_Test
       PathAndIcons:
@@ -33,42 +53,51 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A272BB8B-0F88-45DD-8346-CDC8DE7CB8D1}'
-    m_lastTimePsrt1: -418788557
-    m_lastTimePart2: -1999293007
+    m_lastTimePsrt1: -1877103605
+    m_lastTimePart2: -1999292700
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CDC75DDC-A179-4291-8FFF-AF9209EC3C4E}'
-    m_lastTimePsrt1: -419124894
-    m_lastTimePart2: -1999293007
+    m_lastTimePsrt1: -1866694251
+    m_lastTimePart2: -1999292700
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5545A697-0390-48D1-865D-2F8A411E637B}'
-    m_lastTimePsrt1: -419165006
-    m_lastTimePart2: -1999293007
+    m_lastTimePsrt1: -1866684082
+    m_lastTimePart2: -1999292700
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B7738FE0-E0DB-4EA8-A75C-0215FF224848}'
-    m_lastTimePsrt1: -418828614
-    m_lastTimePart2: -1999293007
-    List: []
+    m_lastTimePsrt1: -738083801
+    m_lastTimePart2: -1999292693
+    List:
+    - Name: SB_Main
+      Path: Default Work Unit\SB_Main
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SB_Main
+        ObjectType: 7
+      ID: 152968626
+      Guid: bc4d2ea5fed9954a957f87342d7b4eb9
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{FE19C0D4-D869-4E71-B606-8293C811EBC6}'
-    m_lastTimePsrt1: -419340472
-    m_lastTimePart2: -1999293007
+    m_lastTimePsrt1: -1877163714
+    m_lastTimePart2: -1999292700
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
-    m_lastTimePsrt1: 1715508639
-    m_lastTimePart2: -1999293014
+    m_lastTimePsrt1: -1877153682
+    m_lastTimePart2: -1999292700
     List:
     - Name: SS_Air_Fear
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
@@ -164,10 +193,13 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6D368762-EDDD-4A07-B29E-6EDAD02C77C6}'
-    m_lastTimePsrt1: -419385320
-    m_lastTimePart2: -1999293007
+    m_lastTimePsrt1: -1866674058
+    m_lastTimePart2: -1999292700
     List: []
-  ExpandedItems: []
+  ExpandedItems:
+  - /IMS487_Wwise
+  - /IMS487_Wwise/Events
+  - /IMS487_Wwise/Events/Default Work Unit
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
