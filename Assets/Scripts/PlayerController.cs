@@ -124,6 +124,8 @@ public class PlayerController : MonoBehaviour
             anim.SetTrigger("rayAttack");
             meleeAttack.SetActive(true);
             attackDuration = Time.time + meleeDuration;
+
+            /*
             Debug.DrawRay(meleeRay.transform.position, meleeStrike, Color.green, swordLength);
             hit = Physics2D.Raycast(meleeRay.transform.position, meleeStrike, swordLength);
             if (hit != null && hit.collider != null && hit.collider.tag == "Enemy")
@@ -132,6 +134,8 @@ public class PlayerController : MonoBehaviour
                 //enemy = enemyBasic.GetComponent<EnemyBasic>();
                 //enemy.TakeDamage();
             }
+            */
+
         }
 
         if(Input.GetKeyDown("1")){
@@ -179,7 +183,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Enemy") && isPaused == false)        {
+        if (other.gameObject.CompareTag("Attack") && isPaused == false)        {
 
        
             gameObject.GetComponent<HeartSystem>().TakeDamage(-2);
