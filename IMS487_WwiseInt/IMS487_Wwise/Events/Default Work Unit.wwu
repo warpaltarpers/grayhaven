@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" SchemaVersion="80">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Wwise_Test" ID="{82715907-FC12-46FC-92CC-BA74D662F564}">
+					<Comment>Should be labeled "[Missing]"</Comment>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
