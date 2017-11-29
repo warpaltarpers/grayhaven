@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 97d26ba2bd856f8439cddbc43e6893c4, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 1
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -196,10 +196,7 @@ MonoBehaviour:
     m_lastTimePsrt1: 1050356486
     m_lastTimePart2: -1999292680
     List: []
-  ExpandedItems:
-  - /IMS487_Wwise
-  - /IMS487_Wwise/Events
-  - /IMS487_Wwise/Events/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
