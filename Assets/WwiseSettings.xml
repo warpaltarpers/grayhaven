@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <WwiseSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <WwiseProjectPath>../../IMS487-design/IMS487_WwiseInt/IMS487_Wwise/IMS487_Wwise.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../IMS487_WwiseInt/IMS487_Wwise/IMS487_Wwise.wproj</WwiseProjectPath>
   <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
   <CreateWwiseGlobal>true</CreateWwiseGlobal>
   <CreateWwiseListener>true</CreateWwiseListener>
