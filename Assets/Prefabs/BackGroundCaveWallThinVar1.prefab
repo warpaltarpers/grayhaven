@@ -9,43 +9,43 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1370871173320334}
+  m_RootGameObject: {fileID: 1324938263307194}
   m_IsPrefabParent: 1
---- !u!1 &1370871173320334
+--- !u!1 &1324938263307194
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4662668757878558}
-  - component: {fileID: 212614760242297868}
+  - component: {fileID: 4968168029666512}
+  - component: {fileID: 212893195470596740}
   m_Layer: 0
-  m_Name: BackGroundCaveWall
+  m_Name: BackGroundCaveWallThinVar1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4662668757878558
+--- !u!4 &4968168029666512
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1370871173320334}
+  m_GameObject: {fileID: 1324938263307194}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.7977, y: 14.63, z: -0.33}
+  m_LocalPosition: {x: 3, y: 4, z: 5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &212614760242297868
+--- !u!212 &212893195470596740
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1370871173320334}
+  m_GameObject: {fileID: 1324938263307194}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,12 +72,12 @@ SpriteRenderer:
   m_SortingLayerID: -1161861191
   m_SortingLayer: -12
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e423882681b556d4a9c27649497fef1a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f72bcae4e57bbf04b8a073b698099395, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 20.48, y: 14.28}
+  m_Size: {x: 20.48, y: 15.36}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
