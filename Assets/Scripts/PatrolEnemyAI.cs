@@ -101,13 +101,6 @@ public class PatrolEnemyAI : MonoBehaviour {
         }
     }
 
-    // Collision detection
-    void OnTriggerEnter2D(Collider2D other) {
-        if (other.tag == "Attack") {
-            health -= 8;
-        }
-    }
-
     // Show line of sight
     void OnDrawGizmos() {
         Gizmos.color = Color.red;

@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114187938321903680}
   m_Layer: 0
   m_Name: sentryProjectile
-  m_TagString: Enemy
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,7 +129,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -497166691
-  m_SortingLayer: -4
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dd33aa75e32ee456da5ef265c2b64325, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

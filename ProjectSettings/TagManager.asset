@@ -7,6 +7,9 @@ TagManager:
   - Enemy
   - Platform
   - Attack
+  - OrangePower
+  - Checkpoint
+  - PlayerMeleeAttack
   layers:
   - Default
   - TransparentFX
