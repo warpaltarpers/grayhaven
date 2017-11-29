@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 50463893611044072}
   - component: {fileID: 114707456740418198}
   - component: {fileID: 114510062603038664}
+  - component: {fileID: 114996376833948944}
   - component: {fileID: 95281373360866958}
   m_Layer: 0
   m_Name: Patrolling Enemy Sprite
@@ -43,7 +44,7 @@ GameObject:
   - component: {fileID: 61707010346014016}
   m_Layer: 0
   m_Name: swordCollider
-  m_TagString: Untagged
+  m_TagString: Attack
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +101,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1156736992754934}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.646759, y: -0.59, z: 0}
+  m_LocalPosition: {x: -4.43, y: -0.59, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4487986820062712}
@@ -114,7 +115,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1807845562322772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.72, y: -2.64, z: 0}
+  m_LocalPosition: {x: 0.65, y: -2.64, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4120163571707436}
@@ -191,7 +192,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -281,6 +282,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   refPlayerController: {fileID: 0}
+--- !u!114 &114996376833948944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1156736992754934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e0596c1db9139b46872ced67ad72bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 50
+  currentHealth: 50
 --- !u!212 &212774683952538178
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -311,7 +325,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -497166691
-  m_SortingLayer: -4
+  m_SortingLayer: -5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 970002d365d787942ae76d07f27c344c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
