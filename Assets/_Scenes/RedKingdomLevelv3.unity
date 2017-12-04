@@ -164,6 +164,8 @@ MonoBehaviour:
   force: 2
   health: 16
   attacking: 0
+  destroy: 0
+  preventMovement: 0
 --- !u!114 &556561
 MonoBehaviour:
   m_ObjectHideFlags: 0
