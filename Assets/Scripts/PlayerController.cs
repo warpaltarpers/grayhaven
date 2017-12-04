@@ -63,9 +63,10 @@ public class PlayerController : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		// This constantly checks whether or not the player is touching the ground
-		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		//anim.SetBool ("Ground", grounded);
+        // This constantly checks whether or not the player is touching the ground
+        //grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
+
+		anim.SetBool ("Ground", isGrounded);
 
 
         //track vertical velocity
