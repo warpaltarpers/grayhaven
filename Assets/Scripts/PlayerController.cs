@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     public float jumpForce = 700;
 
+    public float moveForward;
+
     public float swordLength;
     public GameObject meleeRay;
     public GameObject enemyBasic;
@@ -29,7 +31,8 @@ public class PlayerController : MonoBehaviour
     public float meleeDuration = 2.0f;
 
     Animator anim;
-    bool facingRight = true;
+    public bool facingRight = true;
+    bool jumping;
 
 	//public Transform groundCheck;
 	float groundRadius = 0.2f;
@@ -60,20 +63,26 @@ public class PlayerController : MonoBehaviour
 
 	void FixedUpdate ()
 	{
-		// This constantly checks whether or not the player is touching the ground
-		//grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
-		//anim.SetBool ("Ground", grounded);
+        // This constantly checks whether or not the player is touching the ground
+        //grounded = Physics2D.OverlapCircle (groundCheck.position, groundRadius, whatIsGround);
 
-		// Tells the animation how fast the player is moving up or down when jumping or falling
-		//anim.SetFloat ("vSpeed", gameObject.GetComponent<Rigidbody2D> ().velocity.y);
+		anim.SetBool ("Ground", isGrounded);
+
+
+        //track vertical velocity
+        // Tells the animation how fast the player is moving up or down when jumping or falling
+        anim.SetFloat("vertical", gameObject.GetComponent<Rigidbody2D>().velocity.y);
 
 		// Gets input from the keyboard and reads how much the player is moving
 		float move = Input.GetAxis ("Horizontal");
 
-        float moveForward = Input.GetAxis("Horizontal");
-        float moveBackward = Input.GetAxis("Horizontal");
-        anim.SetFloat("moveForward", moveForward);
-        anim.SetFloat("moveBackward", moveBackward);
+        if(isGrounded){
+            moveForward = Input.GetAxis("Horizontal");
+            float moveBackward = Input.GetAxis("Horizontal");
+            anim.SetFloat("moveForward", moveForward);
+            anim.SetFloat("moveBackward", moveBackward);
+        }
+
 
 		// Controls the movement animation
 		//anim.SetFloat("Speed", Mathf.Abs(move));
@@ -103,13 +112,28 @@ public class PlayerController : MonoBehaviour
 	void Update() 
 	{
         RaycastHit2D hit;
-		if (Input.GetButtonDown ("Jump") && isGrounded) 
-		{
-			//anim.SetBool ("Ground", false);
-			gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
-		}
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            //anim.SetBool ("Ground", false);
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, jumpForce));
 
+            anim.SetTrigger("jump");
+            jumping = true;
+        }
 
+        if (jumping == true && isGrounded)
+        {
+            anim.SetTrigger("landed");
+            jumping = false;
+        }
+
+       
+        if (moveForward > 0 && !facingRight){
+            Flip();
+        }
+        else if (moveForward < 0 && facingRight){
+            Flip();
+        }
 
 
         /*
