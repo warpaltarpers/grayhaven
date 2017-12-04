@@ -28,4 +28,5 @@ Samuel Smith
 ### Producer  
 Soo-Jung Kim  
 #### Special Thanks  
-Matthew Board, Professor
+Matthew Board, Professor  
+Charly Smith, Consultant
