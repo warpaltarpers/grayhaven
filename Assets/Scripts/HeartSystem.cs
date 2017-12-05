@@ -36,6 +36,7 @@ public class HeartSystem : MonoBehaviour {
 
     private void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.O))
         {
             TakeDamage(-1);
@@ -43,7 +44,7 @@ public class HeartSystem : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.P))
         {
             TakeDamage(2);
-        }
+        }*/
     }
 
     void CheckHealthAmount()

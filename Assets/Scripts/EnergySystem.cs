@@ -26,6 +26,7 @@ public class EnergySystem : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (Input.GetKeyDown(KeyCode.K))
         {
             TakeEDamage(-1);
@@ -33,7 +34,7 @@ public class EnergySystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.L))
         {
             TakeEDamage(2);
-        }
+        }*/
     }
 
     void CheckEnergyAmount()
