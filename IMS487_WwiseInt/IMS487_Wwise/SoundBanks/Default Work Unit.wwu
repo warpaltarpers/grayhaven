@@ -5,8 +5,13 @@
 			<ChildrenList>
 				<SoundBank Name="SB_Main" ID="{A52E4DBC-D9FE-4A95-957F-87342D7B4EB9}">
 					<ObjectInclusionList>
+						<ObjectRef Name="PLR_Footsteps" ID="{283B2AE8-96E5-41AC-BACC-C1078D46FCD2}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Title_EnviroReset" ID="{662288CE-73DA-4513-84EE-521CF63625CF}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Title_Score" ID="{46849F65-A38F-45E2-9605-04A5145C6D31}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Level_Enviro_Cave" ID="{CCCCBE4E-C714-478B-916E-03D5C5AEFFCE}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="UI_Click" ID="{D4F43D7A-5682-483A-B0D0-15E9C73492F0}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="LVL_Player_Dmg" ID="{AA18742D-6081-4D4B-AE77-AA883E660633}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Title_TrackReset" ID="{006D098A-6B48-4D95-B82B-F35F39A5C5FA}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

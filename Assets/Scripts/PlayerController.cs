@@ -135,8 +135,13 @@ public class PlayerController : MonoBehaviour
             Flip();
         }
 
+        /* if (moveForward != 0 && jumping == false)
+        {
 
+            AkSoundEngine.PostEvent("PLR_Footsteps", gameObject);
 
+        }
+        */
 
         /*
          * If fire button is pressed, activate meleeAttack game object for X seconds (determined by meleeDuration)
@@ -177,6 +182,8 @@ public class PlayerController : MonoBehaviour
         {
             damageImage.color = flashColour;
             //AudioSource.PlayClipAtPoint(dmg, transform.position, 3.0f);
+            //AkSoundEngine.PostEvent("LVL_Player_Dmg", enemyBasic);
+
         }
         else
             damageImage.color = Color.Lerp(damageImage.color, Color.clear, flashSpeed * Time.deltaTime);

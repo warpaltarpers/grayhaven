@@ -17,16 +17,33 @@
 			<Path>SB_Main.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2440688257" Name="Level_Enviro_Cave" ObjectPath="\Events\Default Work Unit\Level_Enviro_Cave"/>
+				<Event Id="1191487066" Name="LVL_Player_Dmg" ObjectPath="\Events\Default Work Unit\LVL_Player_Dmg"/>
+				<Event Id="7310889" Name="PLR_Footsteps" ObjectPath="\Events\Default Work Unit\PLR_Footsteps"/>
+				<Event Id="746659488" Name="Title_EnviroReset" ObjectPath="\Events\Default Work Unit\Title_EnviroReset" MaxAttenuation="0.000000"/>
 				<Event Id="647710990" Name="Title_Score" ObjectPath="\Events\Default Work Unit\Title_Score"/>
+				<Event Id="3088448986" Name="Title_TrackReset" ObjectPath="\Events\Default Work Unit\Title_TrackReset" MaxAttenuation="0.000000"/>
+				<Event Id="2249769530" Name="UI_Click" ObjectPath="\Events\Default Work Unit\UI_Click"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="59622979" Language="SFX">
+					<ShortName>IMS487_Footsteps.wav</ShortName>
+					<Path>SFX\IMS487_Footsteps_1C9C67B2.wem</Path>
+				</File>
+				<File Id="611160938" Language="SFX">
+					<ShortName>IMS487_MenuClick.wav</ShortName>
+					<Path>SFX\IMS487_MenuClick_1C9C67B2.wem</Path>
+				</File>
 				<File Id="667142134" Language="SFX">
 					<ShortName>IMS487_TitleTrack-1.wav</ShortName>
-					<Path>SFX\IMS487_TitleTrack-1_1C9C67B2.wem</Path>
+					<Path>SFX\IMS487_TitleTrack-1_F17FB28C.wem</Path>
 				</File>
 				<File Id="711337801" Language="SFX">
 					<ShortName>IMS487_CaveEnvironment.wav</ShortName>
-					<Path>SFX\IMS487_CaveEnvironment_1C9C67B2.wem</Path>
+					<Path>SFX\IMS487_CaveEnvironment_F17FB28C.wem</Path>
+				</File>
+				<File Id="911001487" Language="SFX">
+					<ShortName>IMS487_PlayerDMG.wav</ShortName>
+					<Path>SFX\IMS487_PlayerDMG_1C9C67B2.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
