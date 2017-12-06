@@ -47,6 +47,9 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 checkPointPos;
 
+    // Flip orange shot direction
+    public static bool shootRight = true;
+
 
     void Start ()
 	{ 
@@ -106,8 +109,8 @@ public class PlayerController : MonoBehaviour
 
 	}
 
-	void Update() 
-	{
+    void Update()
+    {
         RaycastHit2D hit;
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -128,11 +131,13 @@ public class PlayerController : MonoBehaviour
         if (moveForward > 0 && !facingRight)
         {
             Flip();
+            //shootRight = true;
 
         }
         else if (moveForward < 0 && facingRight)
         {
             Flip();
+            //shootRight = false;
         }
 
 
@@ -144,6 +149,7 @@ public class PlayerController : MonoBehaviour
          * If value is greater than 0, then attack
          * 
          */
+         //if (GameObject.Find("Player").GetComponent<OrangePowerUp>().powerEquipped == 1) {
         float primaryAttack = Input.GetAxis("primaryAttack");
         if (primaryAttack > 0)
         {
@@ -164,9 +170,10 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if(Input.GetKeyDown("1")){
+        if (Input.GetKeyDown("1")) {
             anim.SetTrigger("rayAttack");
         }
+    //}
                   
         if(meleeAttack.activeInHierarchy && Time.time > attackDuration)
         {
@@ -192,6 +199,7 @@ public class PlayerController : MonoBehaviour
 		{
 
 			Flip();
+
 		}
 
 
@@ -201,7 +209,9 @@ public class PlayerController : MonoBehaviour
 
 	// Creates a function that will automatically flip the animation when the player changes directions 
 	void Flip(){
+        print("flip");
 		facingRight = !facingRight;
+        shootRight = !shootRight;
 		Vector3 theScale = transform.localScale;
 		theScale.x *= -1;
 		transform.localScale = theScale;
