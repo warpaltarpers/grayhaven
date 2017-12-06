@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4B1599BD-C451-40A2-A84B-44A9211D9775}'
-    m_lastTimePsrt1: -1331765158
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: 696547728
+    m_lastTimePart2: -1999291248
     List:
     - Name: Level_Enviro_Cave
       Path: Default Work Unit\Level_Enviro_Cave
@@ -29,6 +29,36 @@ MonoBehaviour:
       ID: -1854279039
       Guid: 4ebecccc14c78b47916e03d5c5aeffce
       maxAttenuation: 0
+    - Name: LVL_Player_Dmg
+      Path: Default Work Unit\LVL_Player_Dmg
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: LVL_Player_Dmg
+        ObjectType: 3
+      ID: 1191487066
+      Guid: 2d7418aa81604b4dae77aa883e660633
+      maxAttenuation: 0
+    - Name: PLR_Footsteps
+      Path: Default Work Unit\PLR_Footsteps
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PLR_Footsteps
+        ObjectType: 3
+      ID: 7310889
+      Guid: e82a3b28e596ac41baccc1078d46fcd2
+      maxAttenuation: 0
+    - Name: Title_EnviroReset
+      Path: Default Work Unit\Title_EnviroReset
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Title_EnviroReset
+        ObjectType: 3
+      ID: 746659488
+      Guid: ce882266da73134584ee521cf63625cf
+      maxAttenuation: 0
     - Name: Title_Score
       Path: Default Work Unit\Title_Score
       PathAndIcons:
@@ -38,6 +68,26 @@ MonoBehaviour:
         ObjectType: 3
       ID: 647710990
       Guid: 659f84468fa3e245960504a5145c6d31
+      maxAttenuation: 0
+    - Name: Title_TrackReset
+      Path: Default Work Unit\Title_TrackReset
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Title_TrackReset
+        ObjectType: 3
+      ID: -1206518310
+      Guid: 8a096d00486b954db82bf35f39a5c5fa
+      maxAttenuation: 0
+    - Name: UI_Click
+      Path: Default Work Unit\UI_Click
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: UI_Click
+        ObjectType: 3
+      ID: -2045197766
+      Guid: 7a3df4d482563a48b0d015e9c73492f0
       maxAttenuation: 0
     - Name: Wwise_Test
       Path: Default Work Unit\Wwise_Test
@@ -53,29 +103,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A272BB8B-0F88-45DD-8346-CDC8DE7CB8D1}'
-    m_lastTimePsrt1: -1306014108
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: -435185215
+    m_lastTimePart2: -1999291265
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CDC75DDC-A179-4291-8FFF-AF9209EC3C4E}'
-    m_lastTimePsrt1: -1241766384
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: -435125132
+    m_lastTimePart2: -1999291265
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5545A697-0390-48D1-865D-2F8A411E637B}'
-    m_lastTimePsrt1: -1241706379
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: -435115118
+    m_lastTimePart2: -1999291265
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B7738FE0-E0DB-4EA8-A75C-0215FF224848}'
-    m_lastTimePsrt1: -1241991414
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: 965338221
+    m_lastTimePart2: -1999291250
     List:
     - Name: SB_Main
       Path: Default Work Unit\SB_Main
@@ -90,8 +140,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{FE19C0D4-D869-4E71-B606-8293C811EBC6}'
-    m_lastTimePsrt1: -1331705148
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: -441534977
+    m_lastTimePart2: -1999291265
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
@@ -193,8 +243,8 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6D368762-EDDD-4A07-B29E-6EDAD02C77C6}'
-    m_lastTimePsrt1: -1241626357
-    m_lastTimePart2: -1999291594
+    m_lastTimePsrt1: -435100080
+    m_lastTimePart2: -1999291265
     List: []
   ExpandedItems:
   - /IMS487_Wwise

@@ -28,6 +28,7 @@ public class MenuScriptTitle : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
+        AkSoundEngine.PostEvent("UI_Click", gameObject);
     }
 
     private void Awake()
