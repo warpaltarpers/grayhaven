@@ -1,4 +1,4 @@
-# GreyHaven
+# Gray Haven
 A Metroidvania game about bringing color back to a world without it
 
 ## Design Documents 
