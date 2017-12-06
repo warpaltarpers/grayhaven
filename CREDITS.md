@@ -1,4 +1,4 @@
-# GREYHAVEN, in alphabetical order  
+# GRAY HAVEN, in alphabetical order  
 ### Lead Designers
 Mitchell "Chip" Purcell  
 Dane Winiesdorffer  
