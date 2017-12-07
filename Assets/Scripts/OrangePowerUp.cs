@@ -15,7 +15,7 @@ public class OrangePowerUp : MonoBehaviour {
     //public float fireRate;
     public bool isBullet = false;
     public GameObject projectilePrefab;
-    public Vector2 aim;
+    public Vector2 aim = new Vector2 (1, 0);
 
     //Invulnerability Variables
     public bool invuln = false;
@@ -35,12 +35,13 @@ public class OrangePowerUp : MonoBehaviour {
     void Start() {
 
     // Starts the player without the orange powerup
-        pickedUp = true;
+        pickedUp = false;
     // Equips the red powerup to the player
         powerEquipped = 1;
-    // Visual cue for invulnerability
-       // rend = GetComponent<Renderer>();
+        // Visual cue for invulnerability
+        // rend = GetComponent<Renderer>();
         //rend.material = Mat_player;
+        aim = new Vector2(1, 0);
     }
 
     // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -87,15 +88,27 @@ public class OrangePowerUp : MonoBehaviour {
         // Only do projectiles if orange weapon is equipped
             if (powerEquipped == 2)
             {
-                // If fire2 button is pressed, there is no bullet already, and the shield is not active: fire projectile
-                if (Input.GetButtonDown("Fire1") && !isBullet && !invuln)
+                //float primaryAttack = Input.GetAxis("primaryAttack");
+                //primaryAttack > 0
+                    // If fire2 button is pressed, there is no bullet already, and the shield is not active: fire projectile
+                    if (Input.GetButton("Fire1") && !isBullet && !invuln)
                 {
                     // Create a bullet
                     isBullet = true;
                     GameObject bullet = (GameObject)Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 
                     // Makes sure the bullet doesn't change directions mid flight
-                    aim = /*GameObject.Find("Player").GetComponent<PlayerController>().projectileDirection;*/ new Vector2(1, 0);
+                    
+                    if (PlayerController.shootRight == true)
+                    {
+                        projectileVelocity = 16;
+                    } else if (PlayerController.shootRight == false)
+                    {
+                        projectileVelocity = -16;
+                    }  else
+                    {
+                        projectileVelocity = 16;
+                    }
                     Projectiles.Add(bullet);
 
                     // Decrement energy
