@@ -18,6 +18,7 @@ public class sentryProjectile : MonoBehaviour {
                  * too call here like takeDamage(5);
                  *
                  */
+                 if (!OrangePowerUp.invuln)
                 col.GetComponent<HeartSystem>().TakeDamage(-1);
             }
 
