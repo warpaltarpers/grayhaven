@@ -217,15 +217,6 @@ public class PlayerController : MonoBehaviour
 		transform.localScale = theScale;
 	}
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.CompareTag("Attack") && isPaused == false)        {
 
-       
-            gameObject.GetComponent<HeartSystem>().TakeDamage(-2);
-            isDamaged = true;
- 
-        }
-    }
 
 }
