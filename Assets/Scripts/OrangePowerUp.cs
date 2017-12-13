@@ -18,7 +18,7 @@ public class OrangePowerUp : MonoBehaviour {
     public Vector2 aim = new Vector2 (1, 0);
 
     //Invulnerability Variables
-    public bool invuln = false;
+    public static bool invuln = false;
    // public Material Mat_player;
    // public Material Mat_invuln;
     //public Renderer rend;
@@ -90,29 +90,34 @@ public class OrangePowerUp : MonoBehaviour {
             {
                 //float primaryAttack = Input.GetAxis("primaryAttack");
                 //primaryAttack > 0
-                    // If fire2 button is pressed, there is no bullet already, and the shield is not active: fire projectile
-                    if (Input.GetButton("Fire1") && !isBullet && !invuln)
+                // If fire2 button is pressed, there is no bullet already, and the shield is not active: fire projectile
+                if (!invuln)
                 {
-                    // Create a bullet
-                    isBullet = true;
-                    GameObject bullet = (GameObject)Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+                    if (Input.GetButton("Fire1") && !isBullet && !invuln)
+                    {
+                        // Create a bullet
+                        isBullet = true;
+                        GameObject bullet = (GameObject)Instantiate(projectilePrefab, transform.position, Quaternion.identity);
 
-                    // Makes sure the bullet doesn't change directions mid flight
-                    
-                    if (PlayerController.shootRight == true)
-                    {
-                        projectileVelocity = 16;
-                    } else if (PlayerController.shootRight == false)
-                    {
-                        projectileVelocity = -16;
-                    }  else
-                    {
-                        projectileVelocity = 16;
+                        // Makes sure the bullet doesn't change directions mid flight
+
+                        if (PlayerController.shootRight == true)
+                        {
+                            projectileVelocity = 16;
+                        }
+                        else if (PlayerController.shootRight == false)
+                        {
+                            projectileVelocity = -16;
+                        }
+                        else
+                        {
+                            projectileVelocity = 16;
+                        }
+                        Projectiles.Add(bullet);
+
+                        // Decrement energy
+                        // GameObject.Find("Player").GetComponent<PlayerController>().playerEnergy -= 1;
                     }
-                    Projectiles.Add(bullet);
-
-                    // Decrement energy
-                   // GameObject.Find("Player").GetComponent<PlayerController>().playerEnergy -= 1;
                 }
 
         //====================================================

@@ -149,7 +149,7 @@ public class PlayerController : MonoBehaviour
          * If value is greater than 0, then attack
          * 
          */
-         //if (GameObject.Find("Player").GetComponent<OrangePowerUp>().powerEquipped == 1) {
+         if (!OrangePowerUp.invuln) {
         float primaryAttack = Input.GetAxis("primaryAttack");
         if (primaryAttack > 0)
         {
@@ -173,7 +173,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown("1")) {
             anim.SetTrigger("rayAttack");
         }
-    //}
+    }
                   
         if(meleeAttack.activeInHierarchy && Time.time > attackDuration)
         {

@@ -22,7 +22,10 @@ public class EnemyAttack : MonoBehaviour {
                  * too call here like takeDamage(5);
                  *
                  */
-                col.GetComponent<HeartSystem>().TakeDamage(-2);
+                if (!OrangePowerUp.invuln)
+                {
+                    col.GetComponent<HeartSystem>().TakeDamage(-2);
+                }
             }
 
 
