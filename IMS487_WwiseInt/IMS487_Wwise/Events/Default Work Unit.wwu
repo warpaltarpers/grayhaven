@@ -34,6 +34,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="All_Stop" ID="{AAC1DEF2-9D67-4991-82C5-56335471A574}">
+					<Comment>End all audio.</Comment>
+					<ChildrenList>
+						<Action Name="" ID="{D10387B0-F8EA-4A7E-9C1F-2FE659182C5B}" ShortID="874245883">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

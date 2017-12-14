@@ -119,10 +119,10 @@ GameObject:
   - component: {fileID: 20665043}
   - component: {fileID: 20665042}
   - component: {fileID: 20665041}
+  - component: {fileID: 20665040}
   - component: {fileID: 20665047}
   - component: {fileID: 20665046}
   - component: {fileID: 20665045}
-  - component: {fileID: 20665040}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -138,17 +138,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 20665039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2412aba0c3d0ffe4cb41bef3ae58fa41, type: 3}
+  m_Script: {fileID: 11500000, guid: 7314f3bf28e12e2449b604fb41d290db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   triggerList: f7e1664c
   useOtherObject: 0
-  valueGuid: bc4d2ea5fed9954a957f87342d7b4eb9
-  bankName: SB_Main
-  loadAsynchronous: 0
-  decodeBank: 0
-  saveDecodedBank: 0
-  unloadTriggerList: 958ca0ea
+  valueGuid: f2dec1aa679d914982c556335471a574
+  eventID: -603128979
+  soundEmitterObject: {fileID: 0}
+  enableActionOnEvent: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  transitionDuration: 0
+  m_callbackData: {fileID: 0}
+  playingId: 0
+  multiPositionTypeLabel: 0
+  multiPositionArray: []
 --- !u!124 &20665041
 Behaviour:
   m_ObjectHideFlags: 0
@@ -494,6 +499,7 @@ GameObject:
   - component: {fileID: 770946082}
   - component: {fileID: 770946081}
   - component: {fileID: 770946080}
+  - component: {fileID: 770946083}
   m_Layer: 0
   m_Name: WwiseGlobal
   m_TagString: Untagged
@@ -547,6 +553,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &770946083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 770946079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2412aba0c3d0ffe4cb41bef3ae58fa41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  valueGuid: bc4d2ea5fed9954a957f87342d7b4eb9
+  bankName: SB_Main
+  loadAsynchronous: 0
+  decodeBank: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
 --- !u!1 &1436565864
 GameObject:
   m_ObjectHideFlags: 0

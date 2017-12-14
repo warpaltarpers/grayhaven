@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\Score\Assets"/>
 				<Property Name="Event Action List\{46849F65-A38F-45E2-9605-04A5145C6D31}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{82715907-FC12-46FC-92CC-BA74D662F564}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AAC1DEF2-9D67-4991-82C5-56335471A574}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{CCCCBE4E-C714-478B-916E-03D5C5AEFFCE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">

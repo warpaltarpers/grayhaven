@@ -4,6 +4,9 @@
 		<WorkUnit Name="Default Work Unit" ID="{D05B6183-FAED-4AF1-8C62-2FA0359D5F15}" PersistMode="Standalone">
 			<ChildrenList>
 				<Sound Name="IMS487_CaveEnvironment" ID="{E0FAF327-2ADE-42CD-89BC-E993D58F8C8F}" ShortID="243332546">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66B0821B-873B-4A74-8F68-20AFB8F22EC9}"/>
@@ -80,6 +83,9 @@
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="IMS487_TitleTrack-1" ID="{6039EE8C-9A84-44B2-AF51-D418A327D2E6}" ShortID="332659821">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{66B0821B-873B-4A74-8F68-20AFB8F22EC9}"/>

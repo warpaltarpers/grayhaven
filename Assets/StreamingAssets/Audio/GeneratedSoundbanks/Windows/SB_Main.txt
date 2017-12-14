@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	647710990	Title_Score			\Default Work Unit\Title_Score	
+	2440688257	Level_Enviro_Cave			\Default Work Unit\Level_Enviro_Cave	
+	3691838317	All_Stop			\Default Work Unit\All_Stop	End all audio.
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	667142134	IMS487_TitleTrack-1	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WwiseInt\IMS487_Wwise\.cache\Windows\SFX\IMS487_TitleTrack-1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_TitleTrack-1		15052872
+	711337801	IMS487_CaveEnvironment	C:\Users\Jason\Documents\_Main Documents_\School\College\Senior\IMS 487\IMS487_Git\IMS487\IMS487_WwiseInt\IMS487_Wwise\.cache\Windows\SFX\IMS487_CaveEnvironment_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\IMS487_CaveEnvironment		8478292
+
