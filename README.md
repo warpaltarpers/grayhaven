@@ -10,3 +10,6 @@ A Metroidvania game about bringing color back to a world without it
 ## Pull Requests and You!  
 If you make a pull request from your branch to the master branch, send a message in the Discord server so Jonathan or Max and review your pull request.  
 **If you are not Jonathan or Max, you should not be merging pull requests, unless there is explicit permission otherwise**
+
+## Credits
+Click [here](https://github.com/warpaltarpers/grayhaven/blob/master/CREDITS.md) for a list of the **Gray Haven** team!
