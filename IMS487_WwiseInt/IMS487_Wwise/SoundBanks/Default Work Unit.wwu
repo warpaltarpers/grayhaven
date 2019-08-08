@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Title_Score" ID="{46849F65-A38F-45E2-9605-04A5145C6D31}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Level_Enviro_Cave" ID="{CCCCBE4E-C714-478B-916E-03D5C5AEFFCE}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="All_Stop" ID="{AAC1DEF2-9D67-4991-82C5-56335471A574}" WorkUnitID="{4B1599BD-C451-40A2-A84B-44A9211D9775}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

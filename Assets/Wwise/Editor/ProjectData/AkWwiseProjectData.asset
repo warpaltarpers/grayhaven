@@ -16,9 +16,19 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{4B1599BD-C451-40A2-A84B-44A9211D9775}'
-    m_lastTimePsrt1: -1599309003
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: -1642042227
+    m_lastTimePart2: -1999289666
     List:
+    - Name: All_Stop
+      Path: Default Work Unit\All_Stop
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: All_Stop
+        ObjectType: 3
+      ID: -603128979
+      Guid: f2dec1aa679d914982c556335471a574
+      maxAttenuation: 0
     - Name: Level_Enviro_Cave
       Path: Default Work Unit\Level_Enviro_Cave
       PathAndIcons:
@@ -53,29 +63,29 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{A272BB8B-0F88-45DD-8346-CDC8DE7CB8D1}'
-    m_lastTimePsrt1: -1595640564
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: 952042469
+    m_lastTimePart2: -1999289668
     List: []
   StateWwu:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{CDC75DDC-A179-4291-8FFF-AF9209EC3C4E}'
-    m_lastTimePsrt1: -1588908619
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: 1064179480
+    m_lastTimePart2: -1999289668
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5545A697-0390-48D1-865D-2F8A411E637B}'
-    m_lastTimePsrt1: -1588903609
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: 1064184492
+    m_lastTimePart2: -1999289668
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B7738FE0-E0DB-4EA8-A75C-0215FF224848}'
-    m_lastTimePsrt1: -1588918659
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: -1641937063
+    m_lastTimePart2: -1999289666
     List:
     - Name: SB_Main
       Path: Default Work Unit\SB_Main
@@ -90,14 +100,14 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{FE19C0D4-D869-4E71-B606-8293C811EBC6}'
-    m_lastTimePsrt1: -1599303990
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: 944552075
+    m_lastTimePart2: -1999289668
     List: []
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
-    m_lastTimePsrt1: -1599298982
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: 944557084
+    m_lastTimePart2: -1999289668
     List:
     - Name: SS_Air_Fear
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
@@ -193,8 +203,8 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6D368762-EDDD-4A07-B29E-6EDAD02C77C6}'
-    m_lastTimePsrt1: -1588898603
-    m_lastTimePart2: -1999289876
+    m_lastTimePsrt1: 1064194501
+    m_lastTimePart2: -1999289668
     List: []
   ExpandedItems:
   - /IMS487_Wwise
